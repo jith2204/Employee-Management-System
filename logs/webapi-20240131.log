@@ -1,0 +1,426 @@
+2024-01-31 12:12:36.658 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 12:12:38.083 +05:30  INF  Now listening on: https://localhost:7212
+2024-01-31 12:12:38.083 +05:30  INF  Now listening on: http://localhost:5212
+2024-01-31 12:12:38.088 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-01-31 12:12:38.088 +05:30  INF  Hosting environment: Development
+2024-01-31 12:12:38.089 +05:30  INF  Content root path: C:\Users\jithj\Downloads\Employee Management System\WebApi\
+2024-01-31 12:12:39.838 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2024-01-31 12:12:41.091 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2024-01-31 12:12:41.091 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2024-01-31 12:12:41.116 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 20.6523ms
+2024-01-31 12:12:41.116 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 1281.3302ms
+2024-01-31 12:12:41.197 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 106.1496ms
+2024-01-31 12:12:41.281 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2024-01-31 12:12:41.579 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 297.4785ms
+2024-01-31 12:13:23.639 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 12:13:23.938 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 12:13:23.995 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 12:13:25.750 +05:30  INF  Registering Account
+2024-01-31 12:14:17.294 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 12:14:17.295 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 12:14:17.648 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 12:14:20.985 +05:30  INF  Executed DbCommand (180ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 12:14:26.790 +05:30  INF  Executed DbCommand (29ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 12:14:50.367 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 12:14:50.932 +05:30  INF  Now listening on: https://localhost:7212
+2024-01-31 12:14:50.933 +05:30  INF  Now listening on: http://localhost:5212
+2024-01-31 12:14:50.938 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-01-31 12:14:50.938 +05:30  INF  Hosting environment: Development
+2024-01-31 12:14:50.938 +05:30  INF  Content root path: C:\Users\jithj\Downloads\Employee Management System\WebApi\
+2024-01-31 12:14:52.288 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2024-01-31 12:14:52.841 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2024-01-31 12:14:52.841 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2024-01-31 12:14:52.847 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 565.3720ms
+2024-01-31 12:14:52.864 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 20.2255ms
+2024-01-31 12:14:52.903 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.4962ms
+2024-01-31 12:14:53.001 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2024-01-31 12:14:53.325 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 323.7186ms
+2024-01-31 12:15:29.678 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 12:15:29.887 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 12:15:29.942 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 12:15:30.779 +05:30  INF  Registering Account
+2024-01-31 12:15:37.891 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 12:15:37.891 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 12:15:38.271 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 12:15:40.679 +05:30  INF  Executed DbCommand (193ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 12:15:48.977 +05:30  INF  Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 12:32:12.414 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 12:32:12.986 +05:30  INF  Now listening on: https://localhost:7212
+2024-01-31 12:32:12.986 +05:30  INF  Now listening on: http://localhost:5212
+2024-01-31 12:32:12.991 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-01-31 12:32:12.991 +05:30  INF  Hosting environment: Development
+2024-01-31 12:32:12.991 +05:30  INF  Content root path: C:\Users\jithj\Downloads\Employee Management System\WebApi\
+2024-01-31 12:32:13.708 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2024-01-31 12:32:14.296 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2024-01-31 12:32:14.297 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2024-01-31 12:32:14.335 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 36.6870ms
+2024-01-31 12:32:14.337 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 637.8248ms
+2024-01-31 12:32:14.417 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 120.2950ms
+2024-01-31 12:32:14.499 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2024-01-31 12:32:14.818 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 319.4855ms
+2024-01-31 12:32:39.022 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 12:32:39.233 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 12:32:39.291 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 12:32:40.135 +05:30  INF  Registering Account
+2024-01-31 12:32:54.312 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 12:32:54.312 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 12:32:54.646 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 12:32:56.361 +05:30  INF  Executed DbCommand (111ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 12:33:02.134 +05:30  INF  Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 12:33:22.340 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_BAL.Model.UserRegisterModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-31 12:33:22.356 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 43055.195ms
+2024-01-31 12:33:22.362 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 12:33:22.379 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74 - 200 - application/json;+charset=utf-8 43356.9878ms
+2024-01-31 12:34:58.719 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 12:34:59.236 +05:30  INF  Now listening on: https://localhost:7212
+2024-01-31 12:34:59.236 +05:30  INF  Now listening on: http://localhost:5212
+2024-01-31 12:34:59.241 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-01-31 12:34:59.241 +05:30  INF  Hosting environment: Development
+2024-01-31 12:34:59.241 +05:30  INF  Content root path: C:\Users\jithj\Downloads\Employee Management System\WebApi\
+2024-01-31 12:35:00.224 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2024-01-31 12:35:00.853 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2024-01-31 12:35:00.855 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2024-01-31 12:35:00.883 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 655.7475ms
+2024-01-31 12:35:00.883 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 16.8682ms
+2024-01-31 12:35:00.913 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.1205ms
+2024-01-31 12:35:01.041 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2024-01-31 12:35:01.334 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 292.9775ms
+2024-01-31 12:39:54.008 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 12:39:54.226 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 12:39:54.278 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 12:39:55.115 +05:30  INF  Registering Account
+2024-01-31 12:40:15.517 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 12:40:15.517 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 12:40:15.878 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 12:40:17.568 +05:30  INF  Executed DbCommand (112ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 12:41:35.883 +05:30  INF  Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 12:41:39.775 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_BAL.Model.UserRegisterModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-31 12:41:39.810 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 105507.4687ms
+2024-01-31 12:41:39.812 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 12:41:39.830 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74 - 200 - application/json;+charset=utf-8 105821.9455ms
+2024-01-31 12:43:28.946 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 12:43:28.967 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 12:43:28.967 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 12:43:28.978 +05:30  INF  Registering Account
+2024-01-31 12:43:32.383 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 12:43:32.416 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 12:43:39.486 +05:30  INF  Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 12:43:44.814 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_BAL.Model.UserRegisterModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-31 12:43:44.814 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 15847.0588ms
+2024-01-31 12:43:44.815 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 12:43:44.815 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74 - 200 - application/json;+charset=utf-8 15868.8591ms
+2024-01-31 14:58:33.182 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 14:58:33.751 +05:30  INF  Now listening on: https://localhost:7212
+2024-01-31 14:58:33.751 +05:30  INF  Now listening on: http://localhost:5212
+2024-01-31 14:58:33.756 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-01-31 14:58:33.757 +05:30  INF  Hosting environment: Development
+2024-01-31 14:58:33.757 +05:30  INF  Content root path: C:\Users\jithj\Downloads\Employee Management System\WebApi\
+2024-01-31 14:58:34.611 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2024-01-31 14:58:35.162 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2024-01-31 14:58:35.163 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2024-01-31 14:58:35.184 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 581.2855ms
+2024-01-31 14:58:35.184 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 19.9695ms
+2024-01-31 14:58:35.212 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.9777ms
+2024-01-31 14:58:35.338 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2024-01-31 14:58:35.606 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 268.1550ms
+2024-01-31 14:58:49.805 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 14:58:50.035 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 14:58:50.083 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 14:58:50.880 +05:30  INF  Registering Account
+2024-01-31 14:59:01.977 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 14:59:01.977 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 14:59:02.325 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 14:59:04.115 +05:30  INF  Executed DbCommand (142ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 14:59:13.380 +05:30  INF  Executed DbCommand (31ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 14:59:18.549 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_BAL.Model.UserRegisterModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-31 14:59:18.569 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 28473.8345ms
+2024-01-31 14:59:18.570 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 14:59:18.581 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74 - 200 - application/json;+charset=utf-8 28776.4894ms
+2024-01-31 15:44:04.584 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 15:44:05.205 +05:30  INF  Now listening on: https://localhost:7212
+2024-01-31 15:44:05.205 +05:30  INF  Now listening on: http://localhost:5212
+2024-01-31 15:44:05.211 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-01-31 15:44:05.211 +05:30  INF  Hosting environment: Development
+2024-01-31 15:44:05.211 +05:30  INF  Content root path: C:\Users\jithj\Downloads\Employee Management System\WebApi\
+2024-01-31 15:44:05.777 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2024-01-31 15:44:06.400 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2024-01-31 15:44:06.403 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2024-01-31 15:44:06.428 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 25.3743ms
+2024-01-31 15:44:06.428 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 658.5436ms
+2024-01-31 15:44:06.456 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.2068ms
+2024-01-31 15:44:06.572 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2024-01-31 15:44:06.856 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 284.7976ms
+2024-01-31 15:57:15.029 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 15:57:15.235 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 15:57:15.296 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 15:57:16.135 +05:30  INF  Registering Account
+2024-01-31 15:57:22.334 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 15:57:22.334 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 15:57:22.733 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 15:57:24.567 +05:30  INF  Executed DbCommand (152ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 15:57:32.394 +05:30  ERR  Error:Employee_BAL.Exceptions.DuplicateException: Email exist
+   at Employee_BAL.Service.UserRegisterService.Register(UserRegisterModel userModel) in C:\Users\jithj\Downloads\Employee Management System\Employee BAL\Service\UserRegisterService.cs:line 70
+   at WebApi.Controllers.UserController.<>c__DisplayClass4_0.<RegisterCredentials>b__0() in C:\Users\jithj\Downloads\Employee Management System\WebApi\Controllers\UserController.cs:line 58
+   at WebApi.BaseApiController.TryExecuteAndWrap[T](Func`1 operation, Func`2 OnSuccess, Func`2 transformExceptions, Func`2 onError) in C:\Users\jithj\Downloads\Employee Management System\WebApi\BaseApiController.cs:line 34
+2024-01-31 15:57:32.403 +05:30  INF  Executing ConflictObjectResult, writing value of type 'WebApi.ApiResult`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-01-31 15:57:32.424 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 17114.8938ms
+2024-01-31 15:57:32.425 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 15:57:32.436 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74 - 409 - application/json;+charset=utf-8 17407.5198ms
+2024-01-31 15:58:10.365 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 15:58:10.376 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 15:58:10.376 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 15:58:10.378 +05:30  INF  Registering Account
+2024-01-31 15:58:45.088 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 15:58:45.117 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 15:58:49.476 +05:30  INF  Executed DbCommand (24ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 15:59:17.426 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_BAL.Model.UserRegisterModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-31 15:59:17.428 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 67051.8466ms
+2024-01-31 15:59:17.428 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 15:59:17.428 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74 - 200 - application/json;+charset=utf-8 67063.9085ms
+2024-01-31 16:00:51.979 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 16:00:51.988 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:00:51.988 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 16:00:51.992 +05:30  INF  Registering Account
+2024-01-31 16:00:52.009 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 16:00:52.014 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 16:00:52.030 +05:30  INF  Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 16:00:52.033 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_BAL.Model.UserRegisterModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-31 16:00:52.033 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 44.438ms
+2024-01-31 16:00:52.033 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:00:52.033 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74 - 200 - application/json;+charset=utf-8 55.1117ms
+2024-01-31 16:45:04.590 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 16:45:04.591 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:45:04.592 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 16:45:04.593 +05:30  INF  Registering Account
+2024-01-31 16:45:04.595 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 16:45:04.619 +05:30  INF  Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 16:45:04.625 +05:30  INF  Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 16:45:04.626 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_BAL.Model.UserRegisterModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-31 16:45:04.627 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 34.6133ms
+2024-01-31 16:45:04.627 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:45:04.627 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74 - 200 - application/json;+charset=utf-8 36.7675ms
+2024-01-31 16:45:14.981 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 16:45:14.982 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:45:14.983 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 16:45:14.993 +05:30  INF  Registering Account
+2024-01-31 16:45:14.994 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 16:45:14.995 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 16:45:14.999 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 16:45:15.000 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_BAL.Model.UserRegisterModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-31 16:45:15.001 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 17.9846ms
+2024-01-31 16:45:15.001 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:45:15.001 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74 - 200 - application/json;+charset=utf-8 19.8295ms
+2024-01-31 16:45:15.761 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 16:45:15.761 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:45:15.762 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 16:45:15.762 +05:30  INF  Registering Account
+2024-01-31 16:45:15.763 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 16:45:15.764 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 16:45:15.767 +05:30  INF  Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 16:45:15.768 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_BAL.Model.UserRegisterModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-31 16:45:15.768 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 6.8163ms
+2024-01-31 16:45:15.768 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:45:15.769 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74 - 200 - application/json;+charset=utf-8 7.7361ms
+2024-01-31 16:45:16.521 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 16:45:16.521 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:45:16.522 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 16:45:16.522 +05:30  INF  Registering Account
+2024-01-31 16:45:16.523 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 16:45:16.524 +05:30  INF  Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 16:45:16.525 +05:30  INF  Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 16:45:16.526 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_BAL.Model.UserRegisterModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-31 16:45:16.527 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 5.1826ms
+2024-01-31 16:45:16.527 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:45:16.527 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74 - 200 - application/json;+charset=utf-8 6.2067ms
+2024-01-31 16:45:43.831 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 16:45:44.292 +05:30  INF  Now listening on: https://localhost:7212
+2024-01-31 16:45:44.292 +05:30  INF  Now listening on: http://localhost:5212
+2024-01-31 16:45:44.297 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-01-31 16:45:44.297 +05:30  INF  Hosting environment: Development
+2024-01-31 16:45:44.297 +05:30  INF  Content root path: C:\Users\jithj\Downloads\Employee Management System\WebApi\
+2024-01-31 16:45:46.214 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2024-01-31 16:45:46.832 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2024-01-31 16:45:46.832 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2024-01-31 16:45:46.862 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 655.3812ms
+2024-01-31 16:45:46.862 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 26.5235ms
+2024-01-31 16:45:46.888 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.2657ms
+2024-01-31 16:45:46.999 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2024-01-31 16:45:47.328 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 329.2546ms
+2024-01-31 16:47:04.727 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 62
+2024-01-31 16:47:04.932 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:47:04.975 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 16:47:05.728 +05:30  INF  Registering Account
+2024-01-31 16:47:49.042 +05:30  ERR  Error:Employee_BAL.Exceptions.BadInputException: Enter a valid email
+   at Employee_BAL.Service.ValidationService.IsValidEmail(String email) in C:\Users\jithj\Downloads\Employee Management System\Employee BAL\Service\ValidationService.cs:line 67
+   at Employee_BAL.Service.UserRegisterService.Register(UserRegisterModel userModel) in C:\Users\jithj\Downloads\Employee Management System\Employee BAL\Service\UserRegisterService.cs:line 63
+   at WebApi.Controllers.UserController.<>c__DisplayClass4_0.<RegisterCredentials>b__0() in C:\Users\jithj\Downloads\Employee Management System\WebApi\Controllers\UserController.cs:line 58
+   at WebApi.BaseApiController.TryExecuteAndWrap[T](Func`1 operation, Func`2 OnSuccess, Func`2 transformExceptions, Func`2 onError) in C:\Users\jithj\Downloads\Employee Management System\WebApi\BaseApiController.cs:line 34
+2024-01-31 16:47:49.056 +05:30  INF  Executing BadRequestObjectResult, writing value of type 'WebApi.ApiResult`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-01-31 16:47:49.075 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 44087.9534ms
+2024-01-31 16:47:49.093 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:47:49.103 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 62 - 400 - application/json;+charset=utf-8 44375.0598ms
+2024-01-31 16:48:02.288 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 16:48:02.292 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:48:02.293 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 16:48:02.311 +05:30  INF  Registering Account
+2024-01-31 16:48:16.984 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 16:48:16.984 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 16:48:17.348 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 16:48:19.019 +05:30  INF  Executed DbCommand (113ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 16:48:25.350 +05:30  INF  Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2024-01-31 16:48:33.919 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_BAL.Model.UserRegisterModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-31 16:48:33.922 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (Employee Management) in 31629.5702ms
+2024-01-31 16:48:33.923 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:48:33.932 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74 - 200 - application/json;+charset=utf-8 31643.8810ms
+2024-01-31 16:51:43.846 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 16:51:44.276 +05:30  INF  Now listening on: https://localhost:7212
+2024-01-31 16:51:44.276 +05:30  INF  Now listening on: http://localhost:5212
+2024-01-31 16:51:44.281 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-01-31 16:51:44.282 +05:30  INF  Hosting environment: Development
+2024-01-31 16:51:44.282 +05:30  INF  Content root path: C:\Users\jithj\Downloads\Employee Management System\WebApi\
+2024-01-31 16:51:45.988 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2024-01-31 16:51:46.536 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2024-01-31 16:51:46.536 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 553.0127ms
+2024-01-31 16:51:46.539 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2024-01-31 16:51:46.560 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 23.4222ms
+2024-01-31 16:51:46.581 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.1823ms
+2024-01-31 16:51:46.840 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2024-01-31 16:51:47.197 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 357.2948ms
+2024-01-31 16:52:11.874 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/register application/json 74
+2024-01-31 16:52:12.075 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (Employee Management)'
+2024-01-31 16:52:12.132 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (Employee Management).
+2024-01-31 16:52:12.922 +05:30  INF  Registering Account
+2024-01-31 16:52:18.233 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 16:52:18.233 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-31 16:52:18.561 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2024-01-31 16:52:20.268 +05:30  INF  Executed DbCommand (121ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2024-01-31 16:52:26.566 +05:30  INF  Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [LogOn], [Password], [RegisteredOn])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();

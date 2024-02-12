@@ -1,0 +1,240 @@
+2022-09-27 10:46:58.164 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-27 10:46:58.798 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-27 10:46:58.798 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-27 10:46:58.800 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-27 10:46:58.801 +05:30  INF  Hosting environment: Development
+2022-09-27 10:46:58.801 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-27 10:46:59.334 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-27 10:46:59.783 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-27 10:46:59.783 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-27 10:46:59.805 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 19.3829ms
+2022-09-27 10:46:59.805 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 475.7565ms
+2022-09-27 10:46:59.860 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 77.1462ms
+2022-09-27 10:46:59.932 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-27 10:47:00.082 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 150.3064ms
+2022-09-27 10:54:57.030 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/Register application/json 55
+2022-09-27 10:54:57.531 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.RegisterCredentials (WebApi)'
+2022-09-27 10:54:57.569 +05:30  INF  Route matched with {action = "RegisterCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (WebApi).
+2022-09-27 10:54:58.332 +05:30  INF  Registering Employee Account
+2022-09-27 10:54:59.125 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-27 10:54:59.125 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-27 10:54:59.290 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-27 10:55:00.884 +05:30  INF  Executed DbCommand (79ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn], [u].[UpdatedOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2022-09-27 10:55:01.333 +05:30  ERR  Error:Employee_BAL.Exceptions.DuplicateException: Email exist
+   at Employee_BAL.Service.UserRegisterService.Add(UserRegisterModel userModel) in C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\Service\UserRegisterService.cs:line 56
+   at WebApi.Controllers.UserController.<>c__DisplayClass3_0.<RegisterCredentials>b__0() in C:\Users\jithj\source\repos\EmployeeTask\WebApi\Controllers\UserController.cs:line 63
+   at WebApi.BaseApiController.TryExecuteAndWrap[T](Func`1 operation, Func`2 OnSuccess, Func`2 transformExceptions, Func`2 onError) in C:\Users\jithj\source\repos\EmployeeTask\WebApi\BaseApiController.cs:line 34
+2022-09-27 10:55:01.337 +05:30  INF  Executing ConflictObjectResult, writing value of type 'WebApi.ApiResult`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-27 10:55:01.345 +05:30  INF  Executed action WebApi.Controllers.UserController.RegisterCredentials (WebApi) in 3771.1765ms
+2022-09-27 10:55:01.346 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.RegisterCredentials (WebApi)'
+2022-09-27 10:55:01.351 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/Register application/json 55 - 409 - application/json;+charset=utf-8 4321.4594ms
+2022-09-27 10:55:26.835 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/user/Login application/json 55
+2022-09-27 10:55:26.866 +05:30  INF  Executing endpoint 'WebApi.Controllers.UserController.LogInCredentials (WebApi)'
+2022-09-27 10:55:26.871 +05:30  INF  Route matched with {action = "LogInCredentials", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LogInCredentials(Employee_BAL.Model.UserRegisterModel) on controller WebApi.Controllers.UserController (WebApi).
+2022-09-27 10:55:26.873 +05:30  INF  Logging in Credentials
+2022-09-27 10:55:26.904 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-27 10:55:26.912 +05:30  INF  Executed DbCommand (4ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[LogOn], [u].[Password], [u].[RegisteredOn], [u].[UpdatedOn]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2022-09-27 10:55:27.263 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-27 10:55:27.263 +05:30  INF  Executed action WebApi.Controllers.UserController.LogInCredentials (WebApi) in 391.419ms
+2022-09-27 10:55:27.263 +05:30  INF  Executed endpoint 'WebApi.Controllers.UserController.LogInCredentials (WebApi)'
+2022-09-27 10:55:27.263 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/user/Login application/json 55 - 200 - application/json;+charset=utf-8 427.6290ms
+2022-09-27 10:56:18.283 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/v1/department - -
+2022-09-27 10:56:18.372 +05:30  INF  Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Manager)
+2022-09-27 10:56:18.374 +05:30  INF  AuthenticationScheme: Bearer was forbidden.
+2022-09-27 10:56:18.374 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/v1/department - - - 403 0 - 91.1839ms
+2022-09-27 10:56:26.813 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/v1/employee - -
+2022-09-27 10:56:26.814 +05:30  INF  Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Manager)
+2022-09-27 10:56:26.814 +05:30  INF  AuthenticationScheme: Bearer was forbidden.
+2022-09-27 10:56:26.814 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/v1/employee - - - 403 0 - 1.2669ms
+2022-09-27 11:01:30.722 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-27 11:01:31.295 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-27 11:01:31.295 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-27 11:01:31.297 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-27 11:01:31.298 +05:30  INF  Hosting environment: Development
+2022-09-27 11:01:31.298 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-27 11:01:32.217 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-27 11:01:32.631 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-27 11:01:32.631 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-27 11:01:32.642 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 423.9379ms
+2022-09-27 11:01:32.642 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 11.4988ms
+2022-09-27 11:01:32.656 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.8730ms
+2022-09-27 11:01:32.729 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-27 11:01:32.896 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 166.3412ms
+2022-09-27 11:02:33.789 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/manager/Login application/json 57
+2022-09-27 11:02:33.889 +05:30  INF  Executing endpoint 'WebApi.Controllers.ManagerController.LogInAdmin (WebApi)'
+2022-09-27 11:02:33.909 +05:30  INF  Route matched with {action = "LogInAdmin", controller = "Manager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LogInAdmin(Employee_BAL.Model.ManagerModel) on controller WebApi.Controllers.ManagerController (WebApi).
+2022-09-27 11:02:34.272 +05:30  INF  Logging in Credentials
+2022-09-27 11:02:34.951 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-27 11:02:34.951 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-27 11:02:35.129 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-27 11:02:36.062 +05:30  INF  Executed DbCommand (116ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Email], [m].[Password]
+FROM [Managers] AS [m]
+WHERE [m].[Email] = @__email_0
+2022-09-27 11:02:36.291 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-27 11:02:36.298 +05:30  INF  Executed action WebApi.Controllers.ManagerController.LogInAdmin (WebApi) in 2384.3219ms
+2022-09-27 11:02:36.299 +05:30  INF  Executed endpoint 'WebApi.Controllers.ManagerController.LogInAdmin (WebApi)'
+2022-09-27 11:02:36.305 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/manager/Login application/json 57 - 200 - application/json;+charset=utf-8 2515.9019ms
+2022-09-27 11:03:22.292 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/v1/department - -
+2022-09-27 11:03:22.368 +05:30  INF  Executing endpoint 'WebApi.Controllers.DepartmentController.ViewDepartments (WebApi)'
+2022-09-27 11:03:22.369 +05:30  INF  Route matched with {action = "ViewDepartments", controller = "Department"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewDepartments() on controller WebApi.Controllers.DepartmentController (WebApi).
+2022-09-27 11:03:22.370 +05:30  INF  Getting all Department Details
+2022-09-27 11:03:22.403 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-27 11:03:22.416 +05:30  INF  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[CreatedOn], [d].[DeletedOn], [d].[Description], [d].[Name], [d].[UpdatedOn]
+FROM [Department] AS [d]
+2022-09-27 11:03:22.452 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[System.Collections.Generic.List`1[[Employee_BAL.Model.DepartmentIdModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-27 11:03:22.454 +05:30  INF  Executed action WebApi.Controllers.DepartmentController.ViewDepartments (WebApi) in 84.3517ms
+2022-09-27 11:03:22.454 +05:30  INF  Executed endpoint 'WebApi.Controllers.DepartmentController.ViewDepartments (WebApi)'
+2022-09-27 11:03:22.454 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/v1/department - - - 200 - application/json;+charset=utf-8 161.5640ms
+2022-09-27 11:03:30.703 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/v1/employee - -
+2022-09-27 11:03:30.706 +05:30  INF  Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Employee)
+2022-09-27 11:03:30.708 +05:30  INF  AuthenticationScheme: Bearer was forbidden.
+2022-09-27 11:03:30.708 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/v1/employee - - - 403 0 - 5.6037ms
+2022-09-27 11:16:52.969 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-27 11:16:53.386 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-27 11:16:53.387 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-27 11:16:53.389 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-27 11:16:53.389 +05:30  INF  Hosting environment: Development
+2022-09-27 11:16:53.389 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-27 11:16:54.391 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-27 11:16:54.934 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-27 11:16:54.934 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-27 11:16:54.965 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 581.9005ms
+2022-09-27 11:16:54.965 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 25.5689ms
+2022-09-27 11:16:54.993 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.3000ms
+2022-09-27 11:16:55.111 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-27 11:16:55.376 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 265.5813ms
+2022-09-27 11:17:19.453 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/v1/manager/Login application/json 57
+2022-09-27 11:17:19.604 +05:30  INF  Executing endpoint 'WebApi.Controllers.ManagerController.LogInAdmin (WebApi)'
+2022-09-27 11:17:19.629 +05:30  INF  Route matched with {action = "LogInAdmin", controller = "Manager"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LogInAdmin(Employee_BAL.Model.ManagerModel) on controller WebApi.Controllers.ManagerController (WebApi).
+2022-09-27 11:17:20.063 +05:30  INF  Logging in Credentials
+2022-09-27 11:17:20.867 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-27 11:17:20.867 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-27 11:17:21.052 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-27 11:17:22.128 +05:30  INF  Executed DbCommand (74ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Email], [m].[Password]
+FROM [Managers] AS [m]
+WHERE [m].[Email] = @__email_0
+2022-09-27 11:17:22.456 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-27 11:17:22.467 +05:30  INF  Executed action WebApi.Controllers.ManagerController.LogInAdmin (WebApi) in 2830.9536ms
+2022-09-27 11:17:22.467 +05:30  INF  Executed endpoint 'WebApi.Controllers.ManagerController.LogInAdmin (WebApi)'
+2022-09-27 11:17:22.474 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/v1/manager/Login application/json 57 - 200 - application/json;+charset=utf-8 3020.5317ms
+2022-09-27 11:18:22.167 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/v1/employee - -
+2022-09-27 11:18:22.294 +05:30  INF  Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Employee)
+2022-09-27 11:18:22.299 +05:30  INF  AuthenticationScheme: Bearer was forbidden.
+2022-09-27 11:18:22.299 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/v1/employee - - - 403 0 - 133.2580ms
+2022-09-27 11:40:06.834 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-27 11:40:07.138 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-27 11:40:07.138 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-27 11:40:07.140 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-27 11:40:07.140 +05:30  INF  Hosting environment: Development
+2022-09-27 11:40:07.140 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-27 11:40:07.776 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-27 11:40:08.061 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-27 11:40:08.061 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-27 11:40:08.075 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 11.3194ms
+2022-09-27 11:40:08.075 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 300.1524ms
+2022-09-27 11:40:08.099 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.9740ms
+2022-09-27 11:40:08.183 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-27 11:40:08.336 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 153.4789ms
+2022-09-27 15:53:16.511 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-27 15:53:16.561 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-27 15:53:16.776 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-27 15:53:16.812 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-27 15:53:16.814 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-27 15:53:31.889 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-27 15:53:31.934 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-27 15:53:32.179 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-27 15:53:33.653 +05:30  INF  Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-09-27 15:53:33.731 +05:30  INF  Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-09-27 15:53:33.736 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-09-27 15:53:33.738 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-09-27 15:53:33.792 +05:30  INF  Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-09-27 15:53:33.817 +05:30  INF  Applying migration '20220927102317_user'.
+2022-09-27 15:53:34.193 +05:30  INF  Executed DbCommand (289ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [Managers];
+2022-09-27 15:53:35.062 +05:30  INF  Executed DbCommand (868ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'UpdatedOn');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Users] DROP COLUMN [UpdatedOn];
+2022-09-27 15:53:35.068 +05:30  INF  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220927102317_user', N'6.0.9');
+2022-09-27 15:54:43.583 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-27 15:54:44.692 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-27 15:54:44.692 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-27 15:54:44.698 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-27 15:54:44.698 +05:30  INF  Hosting environment: Development
+2022-09-27 15:54:44.698 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-27 15:54:46.965 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-27 15:54:47.639 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-27 15:54:47.639 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-27 15:54:47.659 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 17.7160ms
+2022-09-27 15:54:47.659 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 700.7566ms
+2022-09-27 15:54:47.748 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 109.3685ms
+2022-09-27 15:54:47.873 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-27 15:54:48.244 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 371.7282ms
+2022-09-27 16:04:37.041 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-27 16:04:37.586 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-27 16:04:37.586 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-27 16:04:37.592 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-27 16:04:37.592 +05:30  INF  Hosting environment: Development
+2022-09-27 16:04:37.592 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-27 16:04:38.946 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-27 16:04:39.541 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-27 16:04:39.541 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-27 16:04:39.567 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 22.6277ms
+2022-09-27 16:04:39.567 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 626.1710ms
+2022-09-27 16:04:39.592 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.4292ms
+2022-09-27 16:04:39.744 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-27 16:04:40.058 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 314.0345ms
+2022-09-27 16:04:59.302 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-27 16:04:59.715 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-27 16:04:59.715 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-27 16:04:59.720 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-27 16:04:59.720 +05:30  INF  Hosting environment: Development
+2022-09-27 16:04:59.720 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-27 16:05:00.880 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-27 16:05:01.409 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-27 16:05:01.409 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-27 16:05:01.436 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 24.3408ms
+2022-09-27 16:05:01.436 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 563.4998ms
+2022-09-27 16:05:01.460 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.7505ms
+2022-09-27 16:05:01.635 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-27 16:05:01.989 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 353.9648ms
+2022-09-27 18:35:29.207 +05:30  INF  User profile is available. Using 'C:\Users\jithj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-09-27 18:35:29.815 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-27 18:35:29.816 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-27 18:35:29.820 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-27 18:35:29.820 +05:30  INF  Hosting environment: Development
+2022-09-27 18:35:29.820 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-27 18:35:30.661 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-27 18:35:31.306 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-27 18:35:31.306 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-27 18:35:31.333 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 23.9142ms
+2022-09-27 18:35:31.333 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 678.3344ms
+2022-09-27 18:35:31.371 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.7711ms
+2022-09-27 18:35:31.524 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-27 18:35:31.836 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 312.4913ms

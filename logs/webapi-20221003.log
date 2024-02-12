@@ -1,0 +1,212 @@
+2022-10-03 16:54:11.721 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 16:54:11.751 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 16:54:11.856 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-10-03 16:54:11.876 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 16:54:11.877 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 16:54:21.729 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 16:54:21.751 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 16:54:21.850 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-10-03 16:54:22.963 +05:30  INF  Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-10-03 16:54:23.027 +05:30  INF  Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-03 16:54:23.030 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-10-03 16:54:23.031 +05:30  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-03 16:54:23.083 +05:30  INF  Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-10-03 16:54:23.097 +05:30  INF  Applying migration '20221003112411_member43'.
+2022-10-03 16:54:23.146 +05:30  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221003112411_member43', N'6.0.9');
+2022-10-03 17:17:19.154 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 17:17:19.175 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 17:17:19.272 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-10-03 17:17:19.292 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 17:17:19.293 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 17:17:27.655 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 17:17:27.677 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 17:17:27.786 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-10-03 17:17:28.065 +05:30  INF  Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-10-03 17:17:28.089 +05:30  INF  Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-03 17:17:28.092 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-10-03 17:17:28.092 +05:30  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-03 17:17:28.110 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-10-03 17:17:28.124 +05:30  INF  Applying migration '20221003114719_member44'.
+2022-10-03 17:17:28.203 +05:30  INF  Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[RoleMembers]') AND [c].[name] = N'RoleId');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [RoleMembers] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [RoleMembers] DROP COLUMN [RoleId];
+2022-10-03 17:17:28.215 +05:30  INF  Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var1 sysname;
+SELECT @var1 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[RoleMembers]') AND [c].[name] = N'UserId');
+IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [RoleMembers] DROP CONSTRAINT [' + @var1 + '];');
+ALTER TABLE [RoleMembers] DROP COLUMN [UserId];
+2022-10-03 17:17:28.217 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221003114719_member44', N'6.0.9');
+2022-10-03 18:47:14.009 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 18:47:14.058 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 18:47:14.263 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-10-03 18:47:14.302 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 18:47:14.303 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 18:47:25.234 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 18:47:25.274 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 18:47:25.468 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-10-03 18:47:26.059 +05:30  INF  Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-10-03 18:47:26.100 +05:30  INF  Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-03 18:47:26.105 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-10-03 18:47:26.106 +05:30  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-03 18:47:26.135 +05:30  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-10-03 18:47:26.158 +05:30  INF  Applying migration '20221003131714_init'.
+2022-10-03 18:47:26.273 +05:30  ERR  Failed executing DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Department] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] VARCHAR(250) NOT NULL,
+    [Description] VARCHAR(250) NULL,
+    [CreatedOn] datetime2 NULL,
+    [UpdatedOn] datetime2 NULL,
+    [DeletedOn] datetime2 NULL,
+    CONSTRAINT [PK_Department] PRIMARY KEY ([Id])
+);
+2022-10-03 18:48:02.848 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 18:48:02.895 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 18:48:03.111 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-10-03 18:48:03.542 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 18:48:03.544 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-10-03 18:48:03.929 +05:30  INF  Executed DbCommand (301ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [Employee Management Api];
+2022-10-03 18:48:04.043 +05:30  INF  Executed DbCommand (107ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [Employee Management Api] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2022-10-03 18:48:04.071 +05:30  INF  Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-10-03 18:48:04.244 +05:30  INF  Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2022-10-03 18:48:04.247 +05:30  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-10-03 18:48:04.280 +05:30  INF  Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-03 18:48:04.287 +05:30  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-10-03 18:48:04.311 +05:30  INF  Applying migration '20221003131714_init'.
+2022-10-03 18:48:04.384 +05:30  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Department] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] VARCHAR(250) NOT NULL,
+    [Description] VARCHAR(250) NULL,
+    [CreatedOn] datetime2 NULL,
+    [UpdatedOn] datetime2 NULL,
+    [DeletedOn] datetime2 NULL,
+    CONSTRAINT [PK_Department] PRIMARY KEY ([Id])
+);
+2022-10-03 18:48:04.388 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Project] (
+    [Id] int NOT NULL IDENTITY,
+    [CreatedOn] datetime2 NULL,
+    [UpdatedOn] datetime2 NULL,
+    [DeletedOn] datetime2 NULL,
+    [Name] VARCHAR(250) NOT NULL,
+    [Description] VARCHAR(250) NULL,
+    [StartDate] datetime2 NULL,
+    [EndDate] datetime2 NULL,
+    CONSTRAINT [PK_Project] PRIMARY KEY ([Id])
+);
+2022-10-03 18:48:04.391 +05:30  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [RoleMembers] (
+    [Id] int NOT NULL IDENTITY,
+    CONSTRAINT [PK_RoleMembers] PRIMARY KEY ([Id])
+);
+2022-10-03 18:48:04.394 +05:30  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Employee] (
+    [Id] int NOT NULL IDENTITY,
+    [CreatedOn] datetime2 NULL,
+    [UpdatedOn] datetime2 NULL,
+    [DeletedOn] datetime2 NULL,
+    [Name] VARCHAR(250) NOT NULL,
+    [Email] VARCHAR(250) NULL,
+    [PhoneNo] VARCHAR(15) NULL,
+    [Address] VARCHAR(250) NULL,
+    [Gender] int NOT NULL,
+    [DOB] datetime2 NULL,
+    [Score] decimal(18,2) NOT NULL,
+    [Salary] decimal(18,2) NULL,
+    [DepartmentId] int NOT NULL,
+    CONSTRAINT [PK_Employee] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Employee_Department_DepartmentId] FOREIGN KEY ([DepartmentId]) REFERENCES [Department] ([Id]) ON DELETE CASCADE
+);
+2022-10-03 18:48:04.396 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Roles] (
+    [Id] int NOT NULL IDENTITY,
+    [Roles] VARCHAR(100) NOT NULL,
+    [Description] VARCHAR(100) NOT NULL,
+    [RoleMemberId] int NULL,
+    CONSTRAINT [PK_Roles] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Roles_RoleMembers_RoleMemberId] FOREIGN KEY ([RoleMemberId]) REFERENCES [RoleMembers] ([Id])
+);
+2022-10-03 18:48:04.399 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] int NOT NULL IDENTITY,
+    [Email] VARCHAR(250) NOT NULL,
+    [Password] VARCHAR(250) NOT NULL,
+    [RegisteredOn] datetime2 NULL,
+    [LogOn] datetime2 NULL,
+    [RoleMemberId] int NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Users_RoleMembers_RoleMemberId] FOREIGN KEY ([RoleMemberId]) REFERENCES [RoleMembers] ([Id])
+);
+2022-10-03 18:48:04.402 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProjectsEmployeeMappings] (
+    [Id] int NOT NULL IDENTITY,
+    [CreatedOn] datetime2 NULL,
+    [EmployeeId] int NOT NULL,
+    [ProjectId] int NOT NULL,
+    CONSTRAINT [PK_ProjectsEmployeeMappings] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ProjectsEmployeeMappings_Employee_EmployeeId] FOREIGN KEY ([EmployeeId]) REFERENCES [Employee] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_ProjectsEmployeeMappings_Project_ProjectId] FOREIGN KEY ([ProjectId]) REFERENCES [Project] ([Id]) ON DELETE CASCADE
+);
+2022-10-03 18:48:04.405 +05:30  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Employee_DepartmentId] ON [Employee] ([DepartmentId]);
+2022-10-03 18:48:04.406 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProjectsEmployeeMappings_EmployeeId] ON [ProjectsEmployeeMappings] ([EmployeeId]);
+2022-10-03 18:48:04.408 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProjectsEmployeeMappings_ProjectId] ON [ProjectsEmployeeMappings] ([ProjectId]);
+2022-10-03 18:48:04.410 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Roles_RoleMemberId] ON [Roles] ([RoleMemberId]);
+2022-10-03 18:48:04.411 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Users_RoleMemberId] ON [Users] ([RoleMemberId]);
+2022-10-03 18:48:04.415 +05:30  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221003131714_init', N'6.0.9');

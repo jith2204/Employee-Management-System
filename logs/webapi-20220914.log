@@ -1,0 +1,576 @@
+2022-09-14 12:34:13.461 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 12:34:13.523 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 12:34:13.529 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 12:34:13.530 +05:30  INF  Hosting environment: Development
+2022-09-14 12:34:13.530 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 12:34:14.862 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 12:34:15.740 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 12:34:15.740 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 12:34:15.772 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 27.9547ms
+2022-09-14 12:34:15.772 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 922.5048ms
+2022-09-14 12:34:15.896 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 155.9553ms
+2022-09-14 12:34:16.044 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 12:34:16.337 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 292.5732ms
+2022-09-14 12:48:56.584 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 12:48:56.731 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 12:48:56.737 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 12:48:56.737 +05:30  INF  Hosting environment: Development
+2022-09-14 12:48:56.737 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 12:48:57.104 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 12:48:57.674 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 12:48:57.682 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 12:48:57.716 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 38.8077ms
+2022-09-14 12:48:57.717 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 620.0020ms
+2022-09-14 12:48:57.741 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.5065ms
+2022-09-14 12:48:57.889 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 12:48:58.203 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 313.7712ms
+2022-09-14 12:49:46.465 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/Employee application/json 167
+2022-09-14 12:49:46.484 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.AddEmployee (WebApi)'
+2022-09-14 12:49:46.531 +05:30  INF  Route matched with {action = "AddEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEmployee(Employee_BAL.Model.EmployeeModel) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 12:49:48.204 +05:30  INF  Adding Employee
+2022-09-14 12:49:49.762 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 12:49:49.762 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 12:49:50.154 +05:30  INF  Entity Framework Core 6.0.8 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 12:49:53.778 +05:30  INF  Executed DbCommand (183ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Email] = @__email_0
+2022-09-14 12:49:53.845 +05:30  INF  Executed DbCommand (6ms) [Parameters=[@__phone_0='?' (Size = 15) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[PhoneNo] = @__phone_0
+2022-09-14 12:49:54.432 +05:30  ERR  Failed executing DbCommand (116ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (Size = 250) (DbType = AnsiString), @p6='?' (DbType = Int32), @p7='?' (Size = 250) (DbType = AnsiString), @p8='?' (Size = 15) (DbType = AnsiString), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([Address], [CreatedOn], [DOB], [DeletedOn], [DepartmentId], [Email], [Gender], [Name], [PhoneNo], [Salary], [Score], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [Employee]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-14 12:49:54.716 +05:30  ERR  An exception occurred in the database while saving changes for context type 'Employee_DAL.ContextData.EmployeeContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Employee_Department_DepartmentId". The conflict occurred in database "Employee Management Api", table "dbo.Department", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:37ae2b56-ce24-46cf-b5e8-6c01346118e6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Employee_Department_DepartmentId". The conflict occurred in database "Employee Management Api", table "dbo.Department", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:37ae2b56-ce24-46cf-b5e8-6c01346118e6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+
+2022-09-14 12:49:54.860 +05:30  INF  Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-09-14 12:49:54.879 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.AddEmployee (WebApi) in 8334.476ms
+2022-09-14 12:49:54.881 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.AddEmployee (WebApi)'
+2022-09-14 12:49:54.894 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/Employee application/json 167 - 400 - application/problem+json;+charset=utf-8 8429.4955ms
+2022-09-14 12:50:22.257 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/Employee application/json 167
+2022-09-14 12:50:22.261 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.AddEmployee (WebApi)'
+2022-09-14 12:50:22.263 +05:30  INF  Route matched with {action = "AddEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEmployee(Employee_BAL.Model.EmployeeModel) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 12:50:22.265 +05:30  INF  Adding Employee
+2022-09-14 12:50:22.334 +05:30  INF  Entity Framework Core 6.0.8 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 12:50:22.342 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Email] = @__email_0
+2022-09-14 12:50:22.345 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__phone_0='?' (Size = 15) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[PhoneNo] = @__phone_0
+2022-09-14 12:50:22.353 +05:30  ERR  Failed executing DbCommand (5ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (Size = 250) (DbType = AnsiString), @p6='?' (DbType = Int32), @p7='?' (Size = 250) (DbType = AnsiString), @p8='?' (Size = 15) (DbType = AnsiString), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([Address], [CreatedOn], [DOB], [DeletedOn], [DepartmentId], [Email], [Gender], [Name], [PhoneNo], [Salary], [Score], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [Employee]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-14 12:50:22.354 +05:30  ERR  An exception occurred in the database while saving changes for context type 'Employee_DAL.ContextData.EmployeeContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Employee_Department_DepartmentId". The conflict occurred in database "Employee Management Api", table "dbo.Department", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:37ae2b56-ce24-46cf-b5e8-6c01346118e6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Employee_Department_DepartmentId". The conflict occurred in database "Employee Management Api", table "dbo.Department", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:37ae2b56-ce24-46cf-b5e8-6c01346118e6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+
+2022-09-14 12:50:22.416 +05:30  INF  Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-09-14 12:50:22.417 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.AddEmployee (WebApi) in 153.5457ms
+2022-09-14 12:50:22.417 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.AddEmployee (WebApi)'
+2022-09-14 12:50:22.417 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/Employee application/json 167 - 400 - application/problem+json;+charset=utf-8 159.9373ms
+2022-09-14 12:53:33.884 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 12:53:33.953 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 12:53:33.960 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 12:53:33.960 +05:30  INF  Hosting environment: Development
+2022-09-14 12:53:33.961 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 12:53:34.519 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 12:53:35.022 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 12:53:35.022 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 12:53:35.057 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 32.6797ms
+2022-09-14 12:53:35.057 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 544.5560ms
+2022-09-14 12:53:35.087 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.2608ms
+2022-09-14 12:53:35.236 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 12:53:35.508 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 272.5274ms
+2022-09-14 12:53:44.283 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-14 12:53:44.302 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 12:53:44.322 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 12:53:46.338 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 12:53:46.339 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 12:53:46.700 +05:30  INF  Entity Framework Core 6.0.8 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 12:53:47.998 +05:30  INF  Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-14 12:53:48.302 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee_BAL.Model.EmployeeModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-14 12:53:48.347 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 4012.2765ms
+2022-09-14 12:53:48.348 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 12:53:48.365 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 200 - application/json;+charset=utf-8 4081.9446ms
+2022-09-14 12:54:41.056 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/Employee application/json 167
+2022-09-14 12:54:41.061 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.AddEmployee (WebApi)'
+2022-09-14 12:54:41.080 +05:30  INF  Route matched with {action = "AddEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEmployee(Employee_BAL.Model.EmployeeModel) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 12:54:41.168 +05:30  INF  Adding Employee
+2022-09-14 12:54:41.251 +05:30  INF  Entity Framework Core 6.0.8 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 12:54:41.777 +05:30  INF  Executed DbCommand (94ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Email] = @__email_0
+2022-09-14 12:54:41.796 +05:30  INF  Executed DbCommand (3ms) [Parameters=[@__phone_0='?' (Size = 15) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[PhoneNo] = @__phone_0
+2022-09-14 12:54:42.159 +05:30  INF  Executed DbCommand (17ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (Size = 250) (DbType = AnsiString), @p6='?' (DbType = Int32), @p7='?' (Size = 250) (DbType = AnsiString), @p8='?' (Size = 15) (DbType = AnsiString), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([Address], [CreatedOn], [DOB], [DeletedOn], [DepartmentId], [Email], [Gender], [Name], [PhoneNo], [Salary], [Score], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [Employee]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-14 12:54:42.325 +05:30  INF  Executing StatusCodeResult, setting HTTP status code 200
+2022-09-14 12:54:42.325 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.AddEmployee (WebApi) in 1244.7654ms
+2022-09-14 12:54:42.325 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.AddEmployee (WebApi)'
+2022-09-14 12:54:42.326 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/Employee application/json 167 - 200 0 - 1269.2211ms
+2022-09-14 12:54:51.135 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-14 12:54:51.137 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 12:54:51.137 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 12:54:51.167 +05:30  INF  Entity Framework Core 6.0.8 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 12:54:51.171 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-14 12:54:51.174 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee_BAL.Model.EmployeeModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-14 12:54:51.175 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 36.9885ms
+2022-09-14 12:54:51.175 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 12:54:51.175 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 200 - application/json;+charset=utf-8 39.3782ms
+2022-09-14 13:10:30.637 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 13:10:30.713 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 13:10:30.719 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 13:10:30.719 +05:30  INF  Hosting environment: Development
+2022-09-14 13:10:30.719 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 13:10:31.572 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 13:10:32.162 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 13:10:32.162 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 13:10:32.190 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 627.2636ms
+2022-09-14 13:10:32.190 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 25.2941ms
+2022-09-14 13:10:32.212 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.7697ms
+2022-09-14 13:10:32.359 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 13:10:32.615 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 255.8070ms
+2022-09-14 13:12:40.841 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-14 13:12:40.899 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 13:12:40.923 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 13:12:41.734 +05:30  INF  Getting All Employee Details
+2022-09-14 13:12:43.149 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 13:12:43.150 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 13:12:43.485 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 13:12:45.619 +05:30  INF  Executed DbCommand (129ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-14 13:12:45.911 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee_BAL.Model.EmployeeModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-14 13:12:45.945 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 5008.6666ms
+2022-09-14 13:12:45.946 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 13:12:45.958 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 200 - application/json;+charset=utf-8 5116.3955ms
+2022-09-14 15:12:05.576 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 15:12:05.649 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 15:12:05.655 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 15:12:05.656 +05:30  INF  Hosting environment: Development
+2022-09-14 15:12:05.656 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 15:12:06.569 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 15:12:07.219 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 15:12:07.219 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 15:12:07.246 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 681.9588ms
+2022-09-14 15:12:07.246 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 22.6855ms
+2022-09-14 15:12:07.301 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 81.7773ms
+2022-09-14 15:12:07.664 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 15:12:07.973 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 308.7564ms
+2022-09-14 15:15:33.385 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 15:15:33.470 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 15:15:33.479 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 15:15:33.480 +05:30  INF  Hosting environment: Development
+2022-09-14 15:15:33.480 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 15:15:34.331 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 15:15:34.864 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 15:15:34.864 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 15:15:34.899 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 28.2076ms
+2022-09-14 15:15:34.912 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 591.4022ms
+2022-09-14 15:15:34.940 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 76.5817ms
+2022-09-14 15:15:35.098 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 15:15:35.498 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 399.2001ms
+2022-09-14 15:15:43.694 +05:30  INF  Request starting HTTP/2 DELETE https://localhost:7212/api/Employee/20 - -
+2022-09-14 15:15:43.727 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-14 15:15:43.778 +05:30  INF  Route matched with {action = "RemoveEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveEmployee(Int32) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 15:15:45.089 +05:30  INF  Deleting a Employee
+2022-09-14 15:15:46.469 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:15:46.469 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:15:46.830 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 15:15:49.417 +05:30  INF  Executed DbCommand (196ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__p_0
+2022-09-14 15:15:49.578 +05:30  ERR  The Employee cannot be found.
+2022-09-14 15:15:49.586 +05:30  INF  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-09-14 15:15:49.598 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi) in 5808.955ms
+2022-09-14 15:15:49.599 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-14 15:15:49.610 +05:30  INF  Request finished HTTP/2 DELETE https://localhost:7212/api/Employee/20 - - - 404 - text/plain;+charset=utf-8 5915.7628ms
+2022-09-14 15:22:35.892 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 15:22:35.955 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 15:22:35.961 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 15:22:35.961 +05:30  INF  Hosting environment: Development
+2022-09-14 15:22:35.962 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 15:22:36.810 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 15:22:37.304 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 15:22:37.305 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 15:22:37.337 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 29.7310ms
+2022-09-14 15:22:37.337 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 533.0924ms
+2022-09-14 15:22:37.387 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.6823ms
+2022-09-14 15:22:37.540 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 15:22:37.788 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 248.1202ms
+2022-09-14 15:22:47.478 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee/20 - -
+2022-09-14 15:22:47.495 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.GetEmployeeById (WebApi)'
+2022-09-14 15:22:47.553 +05:30  INF  Route matched with {action = "GetEmployeeById", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetEmployeeById(Int32) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 15:22:48.254 +05:30  INF  Getting an Employee Details by Employee Id
+2022-09-14 15:22:49.595 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:22:49.596 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:22:49.916 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 15:22:51.680 +05:30  INF  Executed DbCommand (129ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__p_0
+2022-09-14 15:22:51.801 +05:30  ERR  The Employee cannot be found.
+2022-09-14 15:22:51.809 +05:30  INF  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-09-14 15:22:51.825 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.GetEmployeeById (WebApi) in 4258.1143ms
+2022-09-14 15:22:51.827 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.GetEmployeeById (WebApi)'
+2022-09-14 15:22:51.841 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee/20 - - - 404 - text/plain;+charset=utf-8 4363.6890ms
+2022-09-14 15:39:41.855 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 15:39:41.917 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 15:39:41.923 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 15:39:41.923 +05:30  INF  Hosting environment: Development
+2022-09-14 15:39:41.923 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 15:39:42.599 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 15:39:43.165 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 15:39:43.166 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 15:39:43.180 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 10.7948ms
+2022-09-14 15:39:43.180 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 586.9735ms
+2022-09-14 15:39:43.217 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.0066ms
+2022-09-14 15:39:43.395 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 15:39:43.703 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 307.9714ms
+2022-09-14 15:39:53.498 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-14 15:39:53.520 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 15:39:53.539 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 15:39:54.196 +05:30  INF  Getting All Employee Details
+2022-09-14 15:39:55.637 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:39:55.637 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:39:56.017 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 15:39:58.313 +05:30  INF  Executed DbCommand (139ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-14 15:39:58.606 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee_BAL.Model.EmployeeModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-14 15:39:58.638 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 5087.7212ms
+2022-09-14 15:39:58.639 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 15:39:58.653 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 200 - application/json;+charset=utf-8 5154.6829ms
+2022-09-14 15:41:20.418 +05:30  INF  Request starting HTTP/2 DELETE https://localhost:7212/api/Employee/3 - -
+2022-09-14 15:41:20.428 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-14 15:41:20.448 +05:30  INF  Route matched with {action = "RemoveEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveEmployee(Int32) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 15:41:20.496 +05:30  INF  Deleting a Employee
+2022-09-14 15:41:20.565 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 15:41:21.019 +05:30  INF  Executed DbCommand (78ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__p_0
+2022-09-14 15:41:21.487 +05:30  INF  Executed DbCommand (208ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Employee]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-09-14 15:41:21.540 +05:30  INF  Executing StatusCodeResult, setting HTTP status code 200
+2022-09-14 15:41:21.541 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi) in 1092.896ms
+2022-09-14 15:41:21.541 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-14 15:41:21.541 +05:30  INF  Request finished HTTP/2 DELETE https://localhost:7212/api/Employee/3 - - - 200 0 - 1123.4801ms
+2022-09-14 15:41:25.104 +05:30  INF  Request starting HTTP/2 DELETE https://localhost:7212/api/Employee/5 - -
+2022-09-14 15:41:25.104 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-14 15:41:25.105 +05:30  INF  Route matched with {action = "RemoveEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveEmployee(Int32) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 15:41:25.109 +05:30  INF  Deleting a Employee
+2022-09-14 15:41:25.126 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 15:41:25.136 +05:30  INF  Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__p_0
+2022-09-14 15:41:25.142 +05:30  INF  Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Employee]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-09-14 15:41:25.153 +05:30  INF  Executing StatusCodeResult, setting HTTP status code 200
+2022-09-14 15:41:25.154 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi) in 48.931ms
+2022-09-14 15:41:25.154 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-14 15:41:25.154 +05:30  INF  Request finished HTTP/2 DELETE https://localhost:7212/api/Employee/5 - - - 200 0 - 49.7791ms
+2022-09-14 15:41:29.894 +05:30  INF  Request starting HTTP/2 DELETE https://localhost:7212/api/Employee/5 - -
+2022-09-14 15:41:29.894 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-14 15:41:29.894 +05:30  INF  Route matched with {action = "RemoveEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveEmployee(Int32) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 15:41:29.895 +05:30  INF  Deleting a Employee
+2022-09-14 15:41:29.895 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 15:41:29.908 +05:30  INF  Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__p_0
+2022-09-14 15:41:29.994 +05:30  ERR  The Employee cannot be found.
+2022-09-14 15:41:29.995 +05:30  INF  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-09-14 15:41:29.995 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi) in 101.099ms
+2022-09-14 15:41:29.996 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-14 15:41:29.996 +05:30  INF  Request finished HTTP/2 DELETE https://localhost:7212/api/Employee/5 - - - 404 - text/plain;+charset=utf-8 102.2431ms
+2022-09-14 15:41:35.751 +05:30  INF  Request starting HTTP/2 DELETE https://localhost:7212/api/Employee/10 - -
+2022-09-14 15:41:35.751 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-14 15:41:35.751 +05:30  INF  Route matched with {action = "RemoveEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveEmployee(Int32) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 15:41:35.751 +05:30  INF  Deleting a Employee
+2022-09-14 15:41:35.752 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 15:41:35.756 +05:30  INF  Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__p_0
+2022-09-14 15:41:35.772 +05:30  INF  Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Employee]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-09-14 15:41:35.773 +05:30  INF  Executing StatusCodeResult, setting HTTP status code 200
+2022-09-14 15:41:35.774 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi) in 22.4814ms
+2022-09-14 15:41:35.774 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-14 15:41:35.774 +05:30  INF  Request finished HTTP/2 DELETE https://localhost:7212/api/Employee/10 - - - 200 0 - 23.2920ms
+2022-09-14 15:41:42.200 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-14 15:41:42.200 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 15:41:42.200 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 15:41:42.200 +05:30  INF  Getting All Employee Details
+2022-09-14 15:41:42.201 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 15:41:42.204 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-14 15:41:42.204 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee_BAL.Model.EmployeeModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-14 15:41:42.204 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 4.0363ms
+2022-09-14 15:41:42.204 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 15:41:42.205 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 200 - application/json;+charset=utf-8 4.9989ms
+2022-09-14 15:43:12.368 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 15:43:12.458 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 15:43:12.467 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 15:43:12.468 +05:30  INF  Hosting environment: Development
+2022-09-14 15:43:12.468 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 15:43:13.395 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 15:43:13.947 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 15:43:13.948 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 15:43:14.011 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 622.3600ms
+2022-09-14 15:43:14.012 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 59.6018ms
+2022-09-14 15:43:14.048 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 100.8953ms
+2022-09-14 15:43:14.225 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 15:43:14.542 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 316.8018ms
+2022-09-14 15:43:23.224 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-14 15:43:23.240 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 15:43:23.258 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 15:43:23.871 +05:30  INF  Getting All Employee Details
+2022-09-14 15:43:25.234 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:43:25.234 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:43:25.593 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 15:43:26.981 +05:30  INF  Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-14 15:43:27.085 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee_BAL.Model.EmployeeModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-14 15:43:27.109 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 3837.5774ms
+2022-09-14 15:43:27.111 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 15:43:27.124 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 200 - application/json;+charset=utf-8 3899.9349ms
+2022-09-14 15:49:15.712 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 15:49:15.784 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 15:49:15.791 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 15:49:15.792 +05:30  INF  Hosting environment: Development
+2022-09-14 15:49:15.792 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 15:49:16.233 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 15:49:16.827 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 15:49:16.827 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 15:49:16.847 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 17.1443ms
+2022-09-14 15:49:16.848 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 621.9233ms
+2022-09-14 15:49:16.876 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.9209ms
+2022-09-14 15:49:17.068 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 15:49:17.395 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 326.8031ms
+2022-09-14 15:49:22.633 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-14 15:49:22.648 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 15:49:22.672 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 15:49:23.332 +05:30  INF  Getting All Employee Details
+2022-09-14 15:49:24.710 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:49:24.710 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:49:25.070 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 15:49:26.447 +05:30  INF  Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-14 15:49:26.536 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee_BAL.Model.EmployeeModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-14 15:49:26.563 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 3873.6936ms
+2022-09-14 15:49:26.564 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 15:49:26.578 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 200 - application/json;+charset=utf-8 3945.6002ms
+2022-09-14 15:53:23.272 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 15:53:23.355 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 15:53:23.364 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 15:53:23.365 +05:30  INF  Hosting environment: Development
+2022-09-14 15:53:23.365 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 15:53:23.929 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 15:53:24.467 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 15:53:24.467 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 15:53:24.498 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 26.2717ms
+2022-09-14 15:53:24.536 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 612.8884ms
+2022-09-14 15:53:24.559 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 91.6576ms
+2022-09-14 15:53:24.717 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 15:53:25.031 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 313.8346ms
+2022-09-14 15:53:29.550 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-14 15:53:29.573 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 15:53:29.593 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 15:53:30.237 +05:30  INF  Getting All Employee Details
+2022-09-14 15:53:31.711 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:53:31.712 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:53:32.052 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 15:53:33.467 +05:30  INF  Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-14 15:53:33.622 +05:30  ERR  No Employee is added.
+2022-09-14 15:53:33.629 +05:30  INF  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-09-14 15:53:33.643 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 4036.1411ms
+2022-09-14 15:53:33.644 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 15:53:33.656 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 404 - text/plain;+charset=utf-8 4105.9079ms
+2022-09-14 15:54:14.239 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 15:54:14.338 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 15:54:14.344 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 15:54:14.345 +05:30  INF  Hosting environment: Development
+2022-09-14 15:54:14.345 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 15:54:15.355 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 15:54:15.899 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 15:54:15.899 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 15:54:15.926 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 577.9706ms
+2022-09-14 15:54:15.926 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 25.1796ms
+2022-09-14 15:54:15.952 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.7826ms
+2022-09-14 15:54:16.111 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 15:54:16.469 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 357.9141ms
+2022-09-14 15:54:21.507 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-14 15:54:21.528 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 15:54:21.547 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-14 15:54:22.193 +05:30  INF  Getting All Employee Details
+2022-09-14 15:54:23.622 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:54:23.622 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-14 15:54:23.962 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-14 15:54:25.941 +05:30  INF  Executed DbCommand (146ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-14 15:54:26.114 +05:30  ERR  No Employee is added.
+2022-09-14 15:54:26.122 +05:30  INF  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-09-14 15:54:26.137 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 4575.9198ms
+2022-09-14 15:54:26.138 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-14 15:54:26.152 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 404 - text/plain;+charset=utf-8 4644.9888ms
+2022-09-14 16:20:38.105 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 16:20:38.194 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 16:20:38.201 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 16:20:38.201 +05:30  INF  Hosting environment: Development
+2022-09-14 16:20:38.201 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 16:20:38.856 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 16:20:39.348 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 16:20:39.348 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 16:20:39.366 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 517.3921ms
+2022-09-14 16:20:39.366 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 15.5565ms
+2022-09-14 16:20:39.390 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.4446ms
+2022-09-14 16:20:39.546 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 16:20:39.798 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 251.9711ms
+2022-09-14 16:22:55.428 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-14 16:22:55.508 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-14 16:22:55.514 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-14 16:22:55.514 +05:30  INF  Hosting environment: Development
+2022-09-14 16:22:55.514 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-14 16:22:56.459 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-14 16:22:57.053 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-14 16:22:57.053 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-14 16:22:57.081 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 629.6776ms
+2022-09-14 16:22:57.081 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 25.9684ms
+2022-09-14 16:22:57.106 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.8910ms
+2022-09-14 16:22:57.244 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-14 16:22:57.483 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 239.4806ms

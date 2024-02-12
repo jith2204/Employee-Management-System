@@ -1,0 +1,98 @@
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\bin\Debug\net6.0\Employee BAL.deps.json
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\bin\Debug\net6.0\Employee BAL.runtimeconfig.json
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\bin\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\bin\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\bin\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\bin\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.csproj.AssemblyReference.cache
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.AssemblyInfoInputs.cache
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.AssemblyInfo.cs
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.csproj.CoreCompileInputs.cache
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.csproj.CopyComplete
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\refint\Employee BAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.genruntimeconfig.cache
+C:\Users\jithj\source\repos\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\ref\Employee BAL.dll
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\bin\Debug\net6.0\Employee BAL.deps.json
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\bin\Debug\net6.0\Employee BAL.runtimeconfig.json
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\bin\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\bin\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\bin\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\bin\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.csproj.AssemblyReference.cache
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.AssemblyInfoInputs.cache
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.AssemblyInfo.cs
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.csproj.CoreCompileInputs.cache
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.csproj.CopyComplete
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\refint\Employee BAL.dll
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\Employee BAL.genruntimeconfig.cache
+C:\Users\jithj\Downloads\EmployeeManagement\EmployeeManagement\EmployeeTask\EmployeeBAL\obj\Debug\net6.0\ref\Employee BAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\bin\Debug\net6.0\Employee BAL.deps.json
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\bin\Debug\net6.0\Employee BAL.runtimeconfig.json
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\bin\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\bin\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\bin\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\bin\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.AssemblyReference.cache
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.AssemblyInfoInputs.cache
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.AssemblyInfo.cs
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.CoreCompileInputs.cache
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.CopyComplete
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\obj\Debug\net6.0\refint\Employee BAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.genruntimeconfig.cache
+C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\obj\Debug\net6.0\ref\Employee BAL.dll
+C:\Users\jithj\Desktop\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.AssemblyReference.cache
+C:\Users\jithj\Desktop\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\Desktop\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.AssemblyInfoInputs.cache
+C:\Users\jithj\Desktop\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.AssemblyInfo.cs
+C:\Users\jithj\Desktop\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.CoreCompileInputs.cache
+C:\Users\jithj\Desktop\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\Desktop\EmployeeTask\Employee BAL\obj\Debug\net6.0\refint\Employee BAL.dll
+C:\Users\jithj\Desktop\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\Downloads\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.AssemblyReference.cache
+C:\Users\jithj\Downloads\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\Downloads\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.AssemblyInfoInputs.cache
+C:\Users\jithj\Downloads\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.AssemblyInfo.cs
+C:\Users\jithj\Downloads\EmployeeTask\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.CoreCompileInputs.cache
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.AssemblyReference.cache
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\obj\Debug\net6.0\Employee BAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\obj\Debug\net6.0\Employee BAL.AssemblyInfoInputs.cache
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\obj\Debug\net6.0\Employee BAL.AssemblyInfo.cs
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.CoreCompileInputs.cache
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\bin\Debug\net6.0\Employee BAL.deps.json
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\bin\Debug\net6.0\Employee BAL.runtimeconfig.json
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\bin\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\bin\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\bin\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\bin\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.CopyComplete
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\obj\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\obj\Debug\net6.0\refint\Employee BAL.dll
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\obj\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\obj\Debug\net6.0\Employee BAL.genruntimeconfig.cache
+C:\Users\jithj\Downloads\Employee Management System\Employee BAL\obj\Debug\net6.0\ref\Employee BAL.dll
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\bin\Debug\net6.0\Employee BAL.deps.json
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\bin\Debug\net6.0\Employee BAL.runtimeconfig.json
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\bin\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\bin\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\bin\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\bin\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.AssemblyReference.cache
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\obj\Debug\net6.0\Employee BAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\obj\Debug\net6.0\Employee BAL.AssemblyInfoInputs.cache
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\obj\Debug\net6.0\Employee BAL.AssemblyInfo.cs
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.CoreCompileInputs.cache
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\obj\Debug\net6.0\Employee BAL.csproj.CopyComplete
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\obj\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\obj\Debug\net6.0\refint\Employee BAL.dll
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\obj\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\obj\Debug\net6.0\Employee BAL.genruntimeconfig.cache
+C:\Users\jithj\source\repos\Employee-Management-System\Employee BAL\obj\Debug\net6.0\ref\Employee BAL.dll

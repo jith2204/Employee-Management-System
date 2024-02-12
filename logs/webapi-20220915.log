@@ -1,0 +1,198 @@
+2022-09-15 22:47:03.367 +05:30  INF  Now listening on: https://localhost:7212
+2022-09-15 22:47:03.409 +05:30  INF  Now listening on: http://localhost:5212
+2022-09-15 22:47:03.413 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2022-09-15 22:47:03.413 +05:30  INF  Hosting environment: Development
+2022-09-15 22:47:03.413 +05:30  INF  Content root path: C:\Users\jithj\source\repos\EmployeeTask\WebApi\
+2022-09-15 22:47:04.406 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/index.html - -
+2022-09-15 22:47:04.856 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 22:47:04.856 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/_vs/browserLink - -
+2022-09-15 22:47:04.871 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 11.2454ms
+2022-09-15 22:47:04.872 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/index.html - - - 200 - text/html;charset=utf-8 470.2737ms
+2022-09-15 22:47:04.922 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.7241ms
+2022-09-15 22:47:05.060 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - -
+2022-09-15 22:47:05.208 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 148.1434ms
+2022-09-15 22:48:34.013 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-15 22:48:34.031 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-15 22:48:34.058 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-15 22:48:37.083 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-15 22:48:37.083 +05:30  WRN  No store type was specified for the decimal property 'Score' on entity type 'Employees'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-09-15 22:48:37.441 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-15 22:48:40.767 +05:30  INF  Executed DbCommand (172ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-15 22:48:41.004 +05:30  INF  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-09-15 22:48:41.019 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 6947.4393ms
+2022-09-15 22:48:41.020 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-15 22:48:41.037 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 404 - text/plain;+charset=utf-8 7023.9071ms
+2022-09-15 22:49:41.820 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Department - -
+2022-09-15 22:49:41.831 +05:30  INF  Executing endpoint 'WebApi.Controllers.DepartmentController.ViewDepartments (WebApi)'
+2022-09-15 22:49:41.832 +05:30  INF  Route matched with {action = "ViewDepartments", controller = "Department"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewDepartments() on controller WebApi.Controllers.DepartmentController (WebApi).
+2022-09-15 22:49:41.904 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-15 22:49:41.981 +05:30  INF  Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[CreatedOn], [d].[DeletedOn], [d].[Description], [d].[Name], [d].[UpdatedOn]
+FROM [Department] AS [d]
+2022-09-15 22:49:42.163 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee_BAL.Model.DepartmentModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 22:49:42.190 +05:30  INF  Executed action WebApi.Controllers.DepartmentController.ViewDepartments (WebApi) in 357.068ms
+2022-09-15 22:49:42.190 +05:30  INF  Executed endpoint 'WebApi.Controllers.DepartmentController.ViewDepartments (WebApi)'
+2022-09-15 22:49:42.190 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Department - - - 200 - application/json;+charset=utf-8 370.3800ms
+2022-09-15 22:49:49.279 +05:30  INF  Request starting HTTP/2 POST https://localhost:7212/api/Employee application/json 165
+2022-09-15 22:49:49.279 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.AddEmployee (WebApi)'
+2022-09-15 22:49:49.332 +05:30  INF  Route matched with {action = "AddEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEmployee(Employee_BAL.Model.EmployeeModel) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-15 22:49:49.520 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-15 22:49:50.014 +05:30  INF  Executed DbCommand (95ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Email] = @__email_0
+2022-09-15 22:49:50.033 +05:30  INF  Executed DbCommand (5ms) [Parameters=[@__phone_0='?' (Size = 15) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[PhoneNo] = @__phone_0
+2022-09-15 22:49:50.592 +05:30  INF  Executed DbCommand (72ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (Size = 250) (DbType = AnsiString), @p6='?' (DbType = Int32), @p7='?' (Size = 250) (DbType = AnsiString), @p8='?' (Size = 15) (DbType = AnsiString), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([Address], [CreatedOn], [DOB], [DeletedOn], [DepartmentId], [Email], [Gender], [Name], [PhoneNo], [Salary], [Score], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [Employee]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-15 22:49:50.700 +05:30  INF  Executing StatusCodeResult, setting HTTP status code 200
+2022-09-15 22:49:50.700 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.AddEmployee (WebApi) in 1366.9492ms
+2022-09-15 22:49:50.700 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.AddEmployee (WebApi)'
+2022-09-15 22:49:50.701 +05:30  INF  Request finished HTTP/2 POST https://localhost:7212/api/Employee application/json 165 - 200 0 - 1421.9227ms
+2022-09-15 22:50:33.822 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7212/api/Employee/2 application/json 241
+2022-09-15 22:50:33.824 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.UpdateEmployee (WebApi)'
+2022-09-15 22:50:33.836 +05:30  INF  Route matched with {action = "UpdateEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateEmployee(Int32, Employee_BAL.Model.EmployeeModel) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-15 22:50:33.851 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-15 22:50:33.902 +05:30  INF  Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__p_0
+2022-09-15 22:50:34.362 +05:30  ERR  Error:Employee_BAL.Exceptions.EntityNotFoundException: The Employee cannot be found.
+   at Employee_BAL.Service.EmployeeService.GetByEmployeeId(Int32 id) in C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\Service\EmployeeService.cs:line 163
+   at Employee_BAL.Service.EmployeeService.Update(Int32 id, EmployeeModel employeeModel) in C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\Service\EmployeeService.cs:line 110
+   at WebApi.Controllers.EmployeeController.<>c__DisplayClass5_0.<UpdateEmployee>b__0() in C:\Users\jithj\source\repos\EmployeeTask\WebApi\Controllers\EmployeeController.cs:line 113
+   at WebApi.BaseApiController.TryExecuteAndWrap[T](Func`1 operation, Func`2 OnSuccess, Func`2 transformExceptions, Func`2 onError) in C:\Users\jithj\source\repos\EmployeeTask\WebApi\BaseApiController.cs:line 34
+2022-09-15 22:50:34.363 +05:30  INF  Executing NotFoundObjectResult, writing value of type 'WebApi.ApiResult`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-15 22:50:34.365 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.UpdateEmployee (WebApi) in 528.7385ms
+2022-09-15 22:50:34.365 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.UpdateEmployee (WebApi)'
+2022-09-15 22:50:34.365 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7212/api/Employee/2 application/json 241 - 404 - application/json;+charset=utf-8 543.7749ms
+2022-09-15 22:50:44.900 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-15 22:50:44.901 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-15 22:50:44.901 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-15 22:50:44.903 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-15 22:50:44.906 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-15 22:50:44.916 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee_BAL.Model.EmployeeModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 22:50:44.924 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 22.2951ms
+2022-09-15 22:50:44.924 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-15 22:50:44.924 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 200 - application/json;+charset=utf-8 24.1552ms
+2022-09-15 22:53:12.798 +05:30  INF  Request starting HTTP/2 PUT https://localhost:7212/api/Employee/11 application/json 236
+2022-09-15 22:53:12.798 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.UpdateEmployee (WebApi)'
+2022-09-15 22:53:12.806 +05:30  INF  Route matched with {action = "UpdateEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateEmployee(Int32, Employee_BAL.Model.EmployeeModel) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-15 22:53:12.817 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-15 22:53:12.827 +05:30  INF  Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__p_0
+2022-09-15 22:53:12.844 +05:30  INF  Executed DbCommand (15ms) [Parameters=[@__email_0='?' (Size = 250) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Email] = @__email_0
+2022-09-15 22:53:12.848 +05:30  INF  Executed DbCommand (3ms) [Parameters=[@__phone_0='?' (Size = 15) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[PhoneNo] = @__phone_0
+2022-09-15 22:53:12.868 +05:30  INF  Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 250) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (Size = 250) (DbType = AnsiString), @p6='?' (DbType = Int32), @p7='?' (Size = 250) (DbType = AnsiString), @p8='?' (Size = 15) (DbType = AnsiString), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([Address], [CreatedOn], [DOB], [DeletedOn], [DepartmentId], [Email], [Gender], [Name], [PhoneNo], [Salary], [Score], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [Id]
+FROM [Employee]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-15 22:53:12.872 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_DAL.Entities.Employees, Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 22:53:12.907 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.UpdateEmployee (WebApi) in 100.9853ms
+2022-09-15 22:53:12.907 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.UpdateEmployee (WebApi)'
+2022-09-15 22:53:12.907 +05:30  INF  Request finished HTTP/2 PUT https://localhost:7212/api/Employee/11 application/json 236 - 200 - application/json;+charset=utf-8 109.7310ms
+2022-09-15 22:53:30.890 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-15 22:53:30.891 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-15 22:53:30.892 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-15 22:53:30.893 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-15 22:53:30.894 +05:30  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-15 22:53:30.895 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee_BAL.Model.EmployeeModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 22:53:30.895 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 3.6515ms
+2022-09-15 22:53:30.895 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-15 22:53:30.896 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 200 - application/json;+charset=utf-8 5.5889ms
+2022-09-15 22:53:57.763 +05:30  INF  Request starting HTTP/2 DELETE https://localhost:7212/api/Employee/34 - -
+2022-09-15 22:53:57.764 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-15 22:53:57.779 +05:30  INF  Route matched with {action = "RemoveEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveEmployee(Int32) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-15 22:53:57.786 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-15 22:53:57.789 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__p_0
+2022-09-15 22:53:57.835 +05:30  ERR  Error:Employee_BAL.Exceptions.EntityNotFoundException: The Employee cannot be found.
+   at Employee_BAL.Service.EmployeeService.Remove(Int32 id) in C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\Service\EmployeeService.cs:line 97
+   at WebApi.Controllers.EmployeeController.<>c__DisplayClass6_0.<RemoveEmployee>b__0() in C:\Users\jithj\source\repos\EmployeeTask\WebApi\Controllers\EmployeeController.cs:line 144
+   at WebApi.BaseApiController.TryExecuteAndWrap[T](Func`1 operation, Func`2 OnSuccess, Func`2 transformExceptions, Func`2 onError) in C:\Users\jithj\source\repos\EmployeeTask\WebApi\BaseApiController.cs:line 34
+2022-09-15 22:53:57.836 +05:30  INF  Executing NotFoundObjectResult, writing value of type 'WebApi.ApiResult`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-15 22:53:57.836 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi) in 56.5745ms
+2022-09-15 22:53:57.836 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-15 22:53:57.837 +05:30  INF  Request finished HTTP/2 DELETE https://localhost:7212/api/Employee/34 - - - 404 - application/json;+charset=utf-8 73.3068ms
+2022-09-15 22:54:06.177 +05:30  INF  Request starting HTTP/2 DELETE https://localhost:7212/api/Employee/12 - -
+2022-09-15 22:54:06.177 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-15 22:54:06.177 +05:30  INF  Route matched with {action = "RemoveEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveEmployee(Int32) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-15 22:54:06.178 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-15 22:54:06.182 +05:30  INF  Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__p_0
+2022-09-15 22:54:06.430 +05:30  INF  Executed DbCommand (217ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Employee]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-09-15 22:54:06.440 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_DAL.Entities.Employees, Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 22:54:06.440 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi) in 263.4977ms
+2022-09-15 22:54:06.441 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.RemoveEmployee (WebApi)'
+2022-09-15 22:54:06.441 +05:30  INF  Request finished HTTP/2 DELETE https://localhost:7212/api/Employee/12 - - - 200 - application/json;+charset=utf-8 264.2013ms
+2022-09-15 22:54:23.505 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee/12 - -
+2022-09-15 22:54:23.505 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.GetEmployeeById (WebApi)'
+2022-09-15 22:54:23.507 +05:30  INF  Route matched with {action = "GetEmployeeById", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetEmployeeById(Int32) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-15 22:54:23.510 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-15 22:54:23.513 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__p_0
+2022-09-15 22:54:23.555 +05:30  ERR  Error:Employee_BAL.Exceptions.EntityNotFoundException: The Employee cannot be found.
+   at Employee_BAL.Service.EmployeeService.GetByEmployeeId(Int32 id) in C:\Users\jithj\source\repos\EmployeeTask\Employee BAL\Service\EmployeeService.cs:line 163
+   at WebApi.Controllers.EmployeeController.<>c__DisplayClass7_0.<GetEmployeeById>b__0() in C:\Users\jithj\source\repos\EmployeeTask\WebApi\Controllers\EmployeeController.cs:line 164
+   at WebApi.BaseApiController.TryExecuteAndWrap[T](Func`1 operation, Func`2 OnSuccess, Func`2 transformExceptions, Func`2 onError) in C:\Users\jithj\source\repos\EmployeeTask\WebApi\BaseApiController.cs:line 34
+2022-09-15 22:54:23.556 +05:30  INF  Executing NotFoundObjectResult, writing value of type 'WebApi.ApiResult`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-15 22:54:23.556 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.GetEmployeeById (WebApi) in 48.9175ms
+2022-09-15 22:54:23.556 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.GetEmployeeById (WebApi)'
+2022-09-15 22:54:23.556 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee/12 - - - 404 - application/json;+charset=utf-8 51.8743ms
+2022-09-15 22:54:31.032 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee/11 - -
+2022-09-15 22:54:31.032 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.GetEmployeeById (WebApi)'
+2022-09-15 22:54:31.032 +05:30  INF  Route matched with {action = "GetEmployeeById", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetEmployeeById(Int32) on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-15 22:54:31.033 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-15 22:54:31.035 +05:30  INF  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__p_0
+2022-09-15 22:54:31.036 +05:30  INF  Executing OkObjectResult, writing value of type 'WebApi.ApiResult`1[[Employee_BAL.Model.EmployeeModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 22:54:31.037 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.GetEmployeeById (WebApi) in 5.1403ms
+2022-09-15 22:54:31.037 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.GetEmployeeById (WebApi)'
+2022-09-15 22:54:31.038 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee/11 - - - 200 - application/json;+charset=utf-8 6.0934ms
+2022-09-15 22:55:02.007 +05:30  INF  Request starting HTTP/2 GET https://localhost:7212/api/Employee - -
+2022-09-15 22:55:02.008 +05:30  INF  Executing endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-15 22:55:02.013 +05:30  INF  Route matched with {action = "ViewEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewEmployees() on controller WebApi.Controllers.EmployeeController (WebApi).
+2022-09-15 22:55:02.018 +05:30  INF  Entity Framework Core 6.0.9 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: MigrationsAssembly=Employee DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
+2022-09-15 22:55:02.020 +05:30  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[CreatedOn], [e].[DOB], [e].[DeletedOn], [e].[DepartmentId], [e].[Email], [e].[Gender], [e].[Name], [e].[PhoneNo], [e].[Salary], [e].[Score], [e].[UpdatedOn]
+FROM [Employee] AS [e]
+2022-09-15 22:55:02.021 +05:30  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee_BAL.Model.EmployeeModel, Employee BAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-15 22:55:02.022 +05:30  INF  Executed action WebApi.Controllers.EmployeeController.ViewEmployees (WebApi) in 7.984ms
+2022-09-15 22:55:02.022 +05:30  INF  Executed endpoint 'WebApi.Controllers.EmployeeController.ViewEmployees (WebApi)'
+2022-09-15 22:55:02.022 +05:30  INF  Request finished HTTP/2 GET https://localhost:7212/api/Employee - - - 200 - application/json;+charset=utf-8 15.2744ms

@@ -1,0 +1,216 @@
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\appsettings.json
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\WebApi.staticwebassets.runtime.json
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\WebApi.exe
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\WebApi.deps.json
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\WebApi.runtimeconfig.json
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\WebApi.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\WebApi.pdb
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Humanizer.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Serilog.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Swashbuckle.Core.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\EmployeeTask.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\EmployeeTask.pdb
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.csproj.AssemblyReference.cache
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.AssemblyInfoInputs.cache
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.AssemblyInfo.cs
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.RazorAssemblyInfo.cache
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.RazorAssemblyInfo.cs
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\scopedcss\bundle\WebApi.styles.css
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\scopedcss\projectbundle\WebApi.bundle.scp.css
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.csproj.CopyComplete
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\refint\WebApi.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.pdb
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\obj\Debug\net6.0\ref\WebApi.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\AspNet.Security.OAuth.Validation.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Scrutor.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\jithj\source\repos\EmployeeTask\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\jithj\Desktop\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.pdb
+C:\Users\jithj\Desktop\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.csproj.AssemblyReference.cache
+C:\Users\jithj\Desktop\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\Desktop\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.AssemblyInfoInputs.cache
+C:\Users\jithj\Desktop\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.AssemblyInfo.cs
+C:\Users\jithj\Desktop\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\jithj\Desktop\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jithj\Desktop\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jithj\Desktop\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.RazorAssemblyInfo.cache
+C:\Users\jithj\Desktop\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.RazorAssemblyInfo.cs
+C:\Users\jithj\Desktop\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.dll
+C:\Users\jithj\Desktop\EmployeeTask\WebApi\obj\Debug\net6.0\refint\WebApi.dll
+C:\Users\jithj\Downloads\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.csproj.AssemblyReference.cache
+C:\Users\jithj\Downloads\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\Downloads\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.AssemblyInfoInputs.cache
+C:\Users\jithj\Downloads\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.AssemblyInfo.cs
+C:\Users\jithj\Downloads\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\jithj\Downloads\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jithj\Downloads\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jithj\Downloads\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.RazorAssemblyInfo.cache
+C:\Users\jithj\Downloads\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.RazorAssemblyInfo.cs
+C:\Users\jithj\Downloads\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.dll
+C:\Users\jithj\Downloads\EmployeeTask\WebApi\obj\Debug\net6.0\refint\WebApi.dll
+C:\Users\jithj\Downloads\EmployeeTask\WebApi\obj\Debug\net6.0\WebApi.pdb
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\WebApi.csproj.AssemblyReference.cache
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\WebApi.AssemblyInfoInputs.cache
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\WebApi.AssemblyInfo.cs
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\WebApi.RazorAssemblyInfo.cache
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\WebApi.RazorAssemblyInfo.cs
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\WebApi.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\refint\WebApi.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\WebApi.pdb
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\appsettings.json
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\WebApi.staticwebassets.runtime.json
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\WebApi.exe
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\WebApi.deps.json
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\WebApi.runtimeconfig.json
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\WebApi.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\WebApi.pdb
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\AspNet.Security.OAuth.Validation.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Humanizer.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Scrutor.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Serilog.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Swashbuckle.Core.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Employee BAL.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\EmployeeTask.dll
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Employee BAL.pdb
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\Downloads\Employee Management System\WebApi\bin\Debug\net6.0\EmployeeTask.pdb
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\scopedcss\bundle\WebApi.styles.css
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\scopedcss\projectbundle\WebApi.bundle.scp.css
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\WebApi.csproj.CopyComplete
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
+C:\Users\jithj\Downloads\Employee Management System\WebApi\obj\Debug\net6.0\ref\WebApi.dll

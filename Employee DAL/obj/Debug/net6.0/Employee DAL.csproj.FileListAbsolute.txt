@@ -1,0 +1,70 @@
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\bin\Debug\net6.0\Employee DAL.deps.json
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\bin\Debug\net6.0\Employee DAL.runtimeconfig.json
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\bin\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\bin\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.csproj.AssemblyReference.cache
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.AssemblyInfoInputs.cache
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.AssemblyInfo.cs
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.csproj.CoreCompileInputs.cache
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\obj\Debug\net6.0\refint\Employee DAL.dll
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.genruntimeconfig.cache
+C:\Users\jithj\source\repos\EmployeeTask\Employee DAL\obj\Debug\net6.0\ref\Employee DAL.dll
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\bin\Debug\net6.0\Employee DAL.deps.json
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\bin\Debug\net6.0\Employee DAL.runtimeconfig.json
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\bin\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\bin\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.csproj.AssemblyReference.cache
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.AssemblyInfoInputs.cache
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.AssemblyInfo.cs
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.csproj.CoreCompileInputs.cache
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\obj\Debug\net6.0\refint\Employee DAL.dll
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.genruntimeconfig.cache
+C:\Users\jithj\Desktop\EmployeeTask\Employee DAL\obj\Debug\net6.0\ref\Employee DAL.dll
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\bin\Debug\net6.0\Employee DAL.deps.json
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\bin\Debug\net6.0\Employee DAL.runtimeconfig.json
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\bin\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\bin\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.csproj.AssemblyReference.cache
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.AssemblyInfoInputs.cache
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.AssemblyInfo.cs
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.csproj.CoreCompileInputs.cache
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\obj\Debug\net6.0\refint\Employee DAL.dll
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\obj\Debug\net6.0\Employee DAL.genruntimeconfig.cache
+C:\Users\jithj\Downloads\EmployeeTask\Employee DAL\obj\Debug\net6.0\ref\Employee DAL.dll
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\bin\Debug\net6.0\Employee DAL.deps.json
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\bin\Debug\net6.0\Employee DAL.runtimeconfig.json
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\bin\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\bin\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\obj\Debug\net6.0\Employee DAL.csproj.AssemblyReference.cache
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\obj\Debug\net6.0\Employee DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\obj\Debug\net6.0\Employee DAL.AssemblyInfoInputs.cache
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\obj\Debug\net6.0\Employee DAL.AssemblyInfo.cs
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\obj\Debug\net6.0\Employee DAL.csproj.CoreCompileInputs.cache
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\obj\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\obj\Debug\net6.0\refint\Employee DAL.dll
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\obj\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\obj\Debug\net6.0\Employee DAL.genruntimeconfig.cache
+C:\Users\jithj\Downloads\Employee Management System\Employee DAL\obj\Debug\net6.0\ref\Employee DAL.dll
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\bin\Debug\net6.0\Employee DAL.deps.json
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\bin\Debug\net6.0\Employee DAL.runtimeconfig.json
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\bin\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\bin\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\obj\Debug\net6.0\Employee DAL.csproj.AssemblyReference.cache
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\obj\Debug\net6.0\Employee DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\obj\Debug\net6.0\Employee DAL.AssemblyInfoInputs.cache
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\obj\Debug\net6.0\Employee DAL.AssemblyInfo.cs
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\obj\Debug\net6.0\Employee DAL.csproj.CoreCompileInputs.cache
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\obj\Debug\net6.0\Employee DAL.dll
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\obj\Debug\net6.0\refint\Employee DAL.dll
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\obj\Debug\net6.0\Employee DAL.pdb
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\obj\Debug\net6.0\Employee DAL.genruntimeconfig.cache
+C:\Users\jithj\source\repos\Employee-Management-System\Employee DAL\obj\Debug\net6.0\ref\Employee DAL.dll
