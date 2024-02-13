@@ -133,7 +133,6 @@ namespace Employee_BAL.Service
             
             if (getName != null)
             {
-
                 throw new DuplicateException("Department name exist");
             }
            

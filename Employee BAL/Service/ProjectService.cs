@@ -144,9 +144,12 @@ namespace Employee_BAL.Service
             {
                 throw new DuplicateException("Project name exist");
             }
+          
             project.Name = projectModel.Name;
             project.Description = projectModel.Description;
-
+            project.StartDate = projectModel.StartDate;
+            project.EndDate = projectModel.EndDate;
+            
             project.UpdatedOn = DateTime.Now;
 
             _projectRepository.Update(project);

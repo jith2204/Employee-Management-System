@@ -16,7 +16,7 @@ namespace Employee_BAL.Interfaces
 
         List<EmployeeIdModel> GetAll();
 
-         EmployeeModel Remove(int id);
+        EmployeeModel Remove(int id);
 
         EmployeeModel Update(int id, EmployeeModel employeeModel);
 
