@@ -13,11 +13,6 @@ namespace Employee_BAL.Interfaces
         List<ProjectsEmployeeMappingModel> EmployeeWorkingProjects(int employeeId);
         ProjectsEmployeeMappingModel Add(ProjectsEmployeeMappingModel mappingModel);
         List<ProjectsEmployeeMappingModel> GetAssignedEmployees(int projectId);
-
-       
-
-       List<ProjectsEmployeeMappingIdModel> GetAllMappingData();
-
-
+        List<ProjectsEmployeeMappingIdModel> GetAllMappingData();
     }
 }

@@ -9,16 +9,8 @@ namespace Employee_BAL.Model
 {
     public class DepartmentModel 
     {
-
-       
-
-     
-       
-
         public string Name { get; set; }
 
         public string Description { get; set; }
-        
-       
     }
 }

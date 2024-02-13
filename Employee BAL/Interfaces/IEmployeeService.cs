@@ -20,12 +20,6 @@ namespace Employee_BAL.Interfaces
 
         EmployeeModel Update(int id, EmployeeModel employeeModel);
 
-     
-
-        EmployeeModel GetByEmployeeId(int id);
-
-       
-
-       
+        EmployeeModel GetByEmployeeId(int id);       
     }
 }

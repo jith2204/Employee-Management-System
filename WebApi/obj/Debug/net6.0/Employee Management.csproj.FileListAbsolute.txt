@@ -179,7 +179,6 @@ C:\Users\jithj\source\repos\Employee-Management-System\WebApi\obj\Debug\net6.0\E
 C:\Users\jithj\source\repos\Employee-Management-System\WebApi\obj\Debug\net6.0\Employee Management.AssemblyInfoInputs.cache
 C:\Users\jithj\source\repos\Employee-Management-System\WebApi\obj\Debug\net6.0\Employee Management.AssemblyInfo.cs
 C:\Users\jithj\source\repos\Employee-Management-System\WebApi\obj\Debug\net6.0\Employee Management.csproj.CoreCompileInputs.cache
-C:\Users\jithj\source\repos\Employee-Management-System\WebApi\obj\Debug\net6.0\Employee Management.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\jithj\source\repos\Employee-Management-System\WebApi\obj\Debug\net6.0\Employee Management.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\jithj\source\repos\Employee-Management-System\WebApi\obj\Debug\net6.0\Employee Management.RazorAssemblyInfo.cache
 C:\Users\jithj\source\repos\Employee-Management-System\WebApi\obj\Debug\net6.0\Employee Management.RazorAssemblyInfo.cs

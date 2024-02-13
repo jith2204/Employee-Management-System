@@ -19,7 +19,5 @@ namespace Employee_BAL.Interfaces
         ProjectModel Update(int id, ProjectModel projectModel);
 
         ProjectModel GetById(int id);
-
-
     }
 }

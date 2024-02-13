@@ -41,6 +41,7 @@ namespace Employee_BAL.Service
                 var project = _mapper.Map<Projects>(projectModel);
                 var name = _validationService.IsValidString(projectModel.Name);
                 var getName = _projectRepository.Find(i => i.Name == name).FirstOrDefault();
+                
                 if (getName != null)
                 {
 
@@ -51,8 +52,8 @@ namespace Employee_BAL.Service
                     project.Name = name;
                 }
 
-
-
+                project.EndDate = projectModel.EndDate;
+                project.StartDate = projectModel.StartDate;
                 project.CreatedOn = DateTime.Now;
                 _projectRepository.Add(project);
                 _unitOfWork.Commit();
@@ -70,18 +71,26 @@ namespace Employee_BAL.Service
         public List<ProjectIdModel> GetAll()
         {
             var project = _projectRepository.GetAll();
+            
             var projectList = _mapper.Map<List<ProjectIdModel>>(project);
+           
             if (projectList?.Any() != true)
             {
                 throw new NoContentException("No Project is added.");
             }
-
+            
             return projectList;
         }
 
         public ProjectModel GetById(int id)
         {
-            throw new NotImplementedException();
+            var project = _projectRepository.GetById(id);
+
+            if (project == null)
+            {
+                throw new EntityNotFoundException("The Employee cannot be found.");
+            }
+            return _mapper.Map<ProjectModel>(project);
         }
 
 
@@ -95,16 +104,17 @@ namespace Employee_BAL.Service
         public ProjectModel Remove(int id)
         {
             var project = _projectRepository.GetById(id);
+           
             if (project == null)
             {
                 throw new EntityNotFoundException("The Project cannot be found.");
 
             }
-
-
-
+            project.DeletedOn = DateTime.Now;
+           
             _projectRepository.Remove(project);
             _unitOfWork.Commit();
+          
             return _mapper.Map<ProjectModel>(project);
         }
 
@@ -120,16 +130,18 @@ namespace Employee_BAL.Service
         public ProjectModel Update(int id, ProjectModel projectModel)
         {
             var project = _projectRepository.GetById(id);
+           
             if (project == null)
             {
                 throw new EntityNotFoundException("The Project cannot be Found");
             }
+          
             var name = _validationService.IsValidString(projectModel.Name);
 
-            var getName = _projectRepository.Find(i => i.Name == name).FirstOrDefault();
+            var getName = _projectRepository.Find(i => i.Name == name && i.Id != id).FirstOrDefault();
+            
             if (getName != null)
             {
-
                 throw new DuplicateException("Project name exist");
             }
             project.Name = projectModel.Name;
@@ -137,9 +149,9 @@ namespace Employee_BAL.Service
 
             project.UpdatedOn = DateTime.Now;
 
-
             _projectRepository.Update(project);
             _unitOfWork.Commit();
+            
             return _mapper.Map<ProjectModel>(project);
         }
     }

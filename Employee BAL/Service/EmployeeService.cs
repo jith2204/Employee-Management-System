@@ -28,7 +28,6 @@ namespace Employee_BAL.Service
             _validationService = validationService;
         }
 
-
         /// <summary>
         /// Adds a Employee with its details
         /// </summary>
@@ -38,8 +37,11 @@ namespace Employee_BAL.Service
         public EmployeeModel Add(EmployeeModel employeeModel)
         {
             var employee = _mapper.Map<Employees>(employeeModel);
+
             var email = _validationService.IsValidEmail(employeeModel.Email);
+            
             var getEmail = _employeeRepository.Find(i => i.Email == email).FirstOrDefault();
+           
             if (getEmail != null)
             {
 
@@ -50,9 +52,10 @@ namespace Employee_BAL.Service
                 employee.Email = email;
             }
 
-
             var phone = _validationService.IsValidPhoneNumber(employeeModel.PhoneNo);
+            
             var getPhone = _employeeRepository.Find(i => i.PhoneNo == phone).FirstOrDefault();
+            
             if (getPhone != null)
             {
 
@@ -63,16 +66,20 @@ namespace Employee_BAL.Service
                 employee.PhoneNo = phone;
             }
 
+            employee.Name = employeeModel.Name;
+            employee.Address = employeeModel.Address;
+            employee.Gender = employeeModel.Gender;
             employee.CreatedOn = DateTime.Now;
+            employee.DOB = employeeModel.DOB;
+            employee.Score = employeeModel.Score;
+            employee.Salary = employeeModel.Salary;
+            employee.DepartmentId = employeeModel.DepartmentId;
+            
             _employeeRepository.Add(employee);
             _unitOfWork.Commit();
+            
             return _mapper.Map<EmployeeModel>(employee);
         }
-
-
-
-
-
 
         /// <summary>
         /// Get All Employee Details
@@ -109,9 +116,8 @@ namespace Employee_BAL.Service
                 throw new EntityNotFoundException("The Employee cannot be found.");
 
             }
-            
-
-
+          
+            employee.DeletedOn = DateTime.Now;
             _employeeRepository.Remove(employee);
             _unitOfWork.Commit();
             return _mapper.Map<EmployeeModel>(employee); 
@@ -126,30 +132,38 @@ namespace Employee_BAL.Service
         /// <returns></returns>
         /// <exception cref="EntityNotFoundException"></exception>
         /// <exception cref="DuplicateException"></exception>
+        
         public EmployeeModel Update(int id, EmployeeModel employeeModel)
         {
             var employee = _employeeRepository.GetById(id);
+          
             if(employee == null)
             {
                 throw new EntityNotFoundException("The Employee cannot be Found");
             }
+            
             var email = _validationService.IsValidEmail(employeeModel.Email);
+            
             var phone = _validationService.IsValidPhoneNumber(employeeModel.PhoneNo);
+            
             var existing = _employeeRepository.Find(i=>i.Email == email && i.PhoneNo == phone && i.Id != id).FirstOrDefault();
+           
             if(existing != null)
             {
                 throw new DuplicateException("Email or Phone Already Exists");
-                
             }
+
             employee.Name = employeeModel.Name;
             employee.Score = employeeModel.Score;
             employee.Email = employeeModel.Email;
             employee.PhoneNo = employeeModel.PhoneNo;
             employee.DepartmentId = employeeModel.DepartmentId;
-
+            employee.Salary = employeeModel.Salary;
+            employee.DOB = employeeModel.DOB;
+            employee.Gender = employeeModel.Gender;
+            employee.Address = employeeModel.Address;
             employee.UpdatedOn = DateTime.Now;
              
-            
             _employeeRepository.Update(employee);
             _unitOfWork.Commit();
             return _mapper.Map<EmployeeModel>(employee);
@@ -166,16 +180,14 @@ namespace Employee_BAL.Service
         public EmployeeModel GetByEmployeeId(int id)
         {
             var employee = _employeeRepository.GetById(id);
+            
             if (employee == null)
             {
                 throw new EntityNotFoundException("The Employee cannot be found.");
 
             }
-
             return _mapper.Map<EmployeeModel>(employee);
         }
-
-
     }
 }
 

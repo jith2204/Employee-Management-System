@@ -43,25 +43,28 @@ namespace Employee_BAL.Service
         /// <exception cref="DuplicateException"></exception>
         public ProjectsEmployeeMappingModel Add(ProjectsEmployeeMappingModel mappingModel)
         {
-
             var employeeProjectMapping = _mapper.Map<ProjectsEmployeeMapping>(mappingModel);
+            
             var employeeId = mappingModel.EmployeeId;
+            
             var projectId = mappingModel.ProjectId;
+            
             var findEmployeeId = _employeeRepository.Find(i => i.Id == employeeId).FirstOrDefault();
 
             if (findEmployeeId == null)
             {
-
                 throw new EntityNotFoundException("The Employee cannot be Found");
             }
 
             var findProjectId = _projectRepository.Find(i => i.Id == projectId).FirstOrDefault();
+           
             if (findProjectId == null)
             {
-
                 throw new EntityNotFoundException("The Project cannot be Found");
             }
+           
             var existingMapping = _employeeProjectMappingRepository.Find(i => i.EmployeeId == employeeId && i.ProjectId == projectId).FirstOrDefault();
+           
             if (existingMapping != null)
             {
                 throw new DuplicateException("Mapping Already Exists");
@@ -72,12 +75,12 @@ namespace Employee_BAL.Service
                 employeeProjectMapping.EmployeeId = employeeId;
                 employeeProjectMapping.ProjectId = projectId;
             }
-
             employeeProjectMapping.CreatedOn = DateTime.Now;
+        
             _employeeProjectMappingRepository.Add(employeeProjectMapping);
             _unitOfWork.Commit();
+          
             return _mapper.Map<ProjectsEmployeeMappingModel>(employeeProjectMapping);
-
         }
 
 
@@ -100,6 +103,7 @@ namespace Employee_BAL.Service
 
 
             var getEmployeeId = _employeeProjectMappingRepository.EmployeeWorkingProjects(employeeId);
+            
             return _mapper.Map<List<ProjectsEmployeeMappingModel>>(getEmployeeId);
         }
 
@@ -113,7 +117,9 @@ namespace Employee_BAL.Service
         public List<ProjectsEmployeeMappingIdModel> GetAllMappingData()
         {
             var project = _employeeProjectMappingRepository.GetAll();
+            
             var projectList = _mapper.Map<List<ProjectsEmployeeMappingIdModel>>(project);
+          
             if (projectList?.Any() != true)
             {
                 throw new NoContentException("No Mapping is added.");
@@ -133,13 +139,14 @@ namespace Employee_BAL.Service
         public List<ProjectsEmployeeMappingModel> GetAssignedEmployees(int projectId)
         {
             var findProjectId = _projectRepository.Find(i => i.Id == projectId).FirstOrDefault();
+          
             if (findProjectId == null)
             {
-
                 throw new EntityNotFoundException("The Project cannot be Found");
             }
 
             var getProjectId = _employeeProjectMappingRepository.GetAssignedEmployees(projectId);
+            
             return _mapper.Map<List<ProjectsEmployeeMappingModel>>(getProjectId);
         }
     }

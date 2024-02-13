@@ -11,7 +11,6 @@ namespace Employee_BAL.Interfaces
 {
     public interface IDepartmentService 
     {
-
         DepartmentModel Add(DepartmentModel departmentModel);
 
         List<DepartmentIdModel> GetAll();
@@ -19,9 +18,5 @@ namespace Employee_BAL.Interfaces
         DepartmentModel Remove(int id);
 
         DepartmentModel Update(int id, DepartmentModel departmentModel);
-
-       
-
-
     }
 }

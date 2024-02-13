@@ -53,9 +53,13 @@ namespace Employee_BAL.Service
             {
                 department.Name = name;
             }
-             department.CreatedOn = DateTime.Now;
+           
+            department.Description = departmentModel.Description;
+            department.CreatedOn = DateTime.Now;
+           
             _departmentRepository.Add(department);
             _unitOfWork.Commit();
+            
             return _mapper.Map<DepartmentModel>(department);
         }
 
@@ -68,12 +72,13 @@ namespace Employee_BAL.Service
         public List<DepartmentIdModel> GetAll()
         {
             var department = _departmentRepository.GetAll();
+            
             var departmentList = _mapper.Map<List<DepartmentIdModel>>(department);
+            
             if (departmentList?.Any() != true)
             {
                 throw new NoContentException("No Department is added.");
             }
-
             return departmentList;
         }
 
@@ -93,11 +98,12 @@ namespace Employee_BAL.Service
                 throw new EntityNotFoundException("The Departments cannot be found.");
 
             }
-
-
-
+           
+            department.DeletedOn = DateTime.Now;
+            
             _departmentRepository.Remove(department);
             _unitOfWork.Commit();
+            
             return _mapper.Map<DepartmentModel>(department);
         }
 
@@ -115,26 +121,30 @@ namespace Employee_BAL.Service
         public DepartmentModel Update(int id, DepartmentModel departmentModel)
         {
             var department = _departmentRepository.GetById(id);
+            
             if (department == null)
             {
                 throw new EntityNotFoundException("The Department cannot be Found");
             }
+           
             var name = _validationService.IsValidString(departmentModel.Name);
 
-            var getName = _departmentRepository.Find(i => i.Name == name).FirstOrDefault();
+            var getName = _departmentRepository.Find(i => i.Name == name && i.Id != id).FirstOrDefault();
+            
             if (getName != null)
             {
 
                 throw new DuplicateException("Department name exist");
             }
+           
             department.Name = departmentModel.Name;
             department.Description = departmentModel.Description;
 
             department.UpdatedOn = DateTime.Now;
 
-
             _departmentRepository.Update(department);
             _unitOfWork.Commit();
+            
             return _mapper.Map<DepartmentModel>(department);
         }
 
